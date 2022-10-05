@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Rasa:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rasa:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://db.onlinewebfonts.com/t/2bb44c5570a017e1ed1082b80624bd0a.ttf?family=Rockwell Condensed');
+
+/* @font-face{font-family:rockwellCondensed; src:url(/assets/fonts/rockwell-condensed.ttf)}; */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rockwell Condensed';
+}
+
+:root {
+    --bg-nav: linear-gradient(to bottom,rgba(191,212,242,0.5) 0%,rgba(255,255,255,0.8) 100%);
+    --bg-btn: #123D56;
+    --color-btn: #fff;
+    --txt-color: rgb(36,121,146);
+    --bg-property: #e9f0f9;
+    --bg-fav:rgba(36,121,146,0.9);
+}
+
+.text-color{
+    color: var(--bg-btn);
+}
+
+.bg-btn{
+    background-color: var(--bg-btn) !important;
+    color: var(--color-btn) !important;
+}
+
+.fm-sans{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+a{
+    text-decoration: none !important;
+    color: var(--bg-btn) ;
+}
+
+h1 , h2 ,h3 , h4 ,h5, h6 ,p{
+    margin: 0;
+}
+
+.main-heading{
+    font-size: 50px;
+    line-height: 62px;
+}
+
+blockquote {
+    margin: 0 0 1.25em;
+    padding: 0.5625em 1.25em 0 1.1875em;
+    border-left: 1px solid #ddd;
+}
+
+
+/* .header{
+    background-color: red;
+    height: 400px;
+} */
+
+
+.header .splide .splide__arrow{
+    opacity: 0;
+    transition-duration: 0.7s;
+    z-index: 1000;
+}
+    
+.header .splide:hover .splide__arrow{
+    background-color: rgba(0, 0, 0, 0.637);
+    transition-duration: 0.7s;
+    border-radius: 0;
+    opacity: 1;
+}
+.header .splide .splide__arrow:hover{
+    background-color: rgb(0, 0, 0);
+    transition-duration: 0.7s;
+}
+
+.splide__arrow svg{
+    fill: #fff !important;
+}
+
+/* search bar */
+
+.header #search-bar{
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    z-index: 0;
+}
+
+#search-bar .hero-heading h2{
+    color: var(--color-btn);
+    font-weight: 400;
+    font-size: 80px;
+    margin-bottom: 0;
+    text-transform: capitalize;
+    text-shadow: 0px 0px 5px rgb(0 0 0 / 50%)
+}
+
+.header .search-bar{
+    background-color: rgba(255, 255, 255, 0.308);
+}
+
+/* section */
+
+.las-vegas-cards{
+    gap: 5px;
+}
+
+.las-vegas-card{
+    display: inline-block;
+    position: relative;
+    width: 20%;
+    /* height: 200px; */
+}
+
+.las-vegas-card .card-heading{
+    background: var(--bg-btn);
+    color: var(--color-btn);
+    padding: 10px 5px;
+    text-align: center;
+    position: relative;
+}
+
+.las-vegas-card .card-heading::before {
+    content: '';
+    position: absolute;
+    bottom: -38px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    background: #247992;
+    border-radius: 300px;
+    width: 50px;
+    height: 50px;
+    z-index: 4;
+    opacity: 0;
+    transition-duration: 0.5s;
+    /* transition: opacity .5s ease-out; */
+}
+
+.las-vegas-card .card-heading:hover::before {
+    /* transition: opacity .25s ease-out; */
+    transition-duration: 0.5s;
+    opacity: 1;
+}
+
+.las-vegas-card .card-heading::after{
+    content: '';
+    position: absolute;
+    margin: auto;
+    bottom: -32px;
+    left: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    display: block;
+    border-style: solid;
+    border-width: 16px;
+    border-color: #123D56 rgba(255,255,255,0) rgba(255,255,255,0) rgba(255,255,255,0);
+    z-index: 5;
+    transition-duration: 0.5s;
+    /* transition: transform .25s ease-out; */
+}
+
+.las-vegas-card .card-heading:hover::after{
+    transform: rotateZ(-90deg) translateY(11px) translateX(4px);
+    /* transition: opacity .35s ease-in-out; */
+    transition-duration: 0.5s;
+    border-top-color: var(--color-btn);
+    border-width: 15px;
+    /* bottom: -35px; */
+}
+
+/* sectoin 2nd */
+
+.group-content .main-heading{
+    color: var(--bg-btn);
+}
+.group-content h2 strong{
+    color: var(--txt-color);
+}
+
+.group-content h4 ,.group-content h4 a{
+    font-size: 35px;
+    line-height: 39px;
+    color: var(--bg-btn) !important;
+}
+.group-content p{
+    letter-spacing: 1px;
+}
+
+/* section property cards */
+
+.property-cards{
+    background-color: var(--bg-property);
+    border-top: solid 2px #247992;
+    border-bottom: solid 1px #123D56;
+    padding-bottom: 25px;
+}
+
+.property-cards h2{
+    color: var(--txt-color);
+}
+
+.property-cards .card{
+    box-shadow: 0 2px 3px rgb(0 0 0 / 20%);
+}
+
+.property-cards .card .card-title a, .card .card-text span{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.property-cards .card .favorites{
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    background-color: var(--bg-fav);
+    padding: 12px 15px 0px;
+    font-size: 35px;
+    color: #fff;
+}
+
+/* secting 4th */
+
+article img{
+    box-shadow: 0px 2px 3px rgb(0 0 0 / 20%);
+}
+
+.view-content .triptych-img .img{
+    box-shadow: 0px 2px 3px rgb(0 0 0 / 20%);
+}
+
+/* footer */
+
+.footer{
+    background: linear-gradient(to bottom,#4a75ac 0%,white 100%);
+}
+
+
+.footer .list-group .group-item ,.footer .list-group .group-item strong ,.footer .list-group .group-item a{
+    list-style: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+}
+
+.footer .socical-links {
+    padding: 4px;
+    font-size: 20px;
+    background: var(--color-btn);
+    margin-right: 20px;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.footer .socical-links a{
+    color: var(--txt-color);
+}
+
+.footer .brands img{
+    max-height: 40px;
+    width: auto;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.socical-links.facebook:hover ,.socical-links.facebook:hover a{
+    background-color: rgb(59,89,152);
+    color: #fff;
+    transition-duration: 0.5s;
+}
+.socical-links.instagram:hover , .socical-links.instagram:hover a{
+    background-color: transparent;
+    color: #fff;
+    transition-duration: 0.5s;
+}
+.socical-links.twitter:hover , .socical-links.twitter:hover a{
+    background-color: rgb(64,153,255);
+    color: #fff;
+    transition-duration: 0.5s;
+}
+.socical-links.youtube:hover , .socical-links.youtube:hover a{
+    background-color: rgb(187,0,0);
+    color: #fff;
+    transition-duration: 0.5s;
+}
+.socical-links.yelp:hover ,.socical-links.yelp:hover a{
+    background-color: rgb(187,0,0);
+    color: #fff;
+    transition-duration: 0.5s;
+}
+.socical-links.pinterest:hover , .socical-links.pinterest:hover a{
+    background-color: rgb(187,0,0);
+    color: #fff;
+    transition-duration: 0.5s;
+}
+
+@media screen and (max-width: 1200px) {
+    .navbar .navbar-brand{
+        width: 200px;
+    }
+    #search-bar .hero-heading h2{
+        font-size: 70px;
+    }
+  }
+
+@media screen and (max-width: 992px) {
+    .navbar .navbar-brand{
+        width: 150px;
+    }
+    .navbar .dropdown .nav-link.show::after{
+        bottom: auto;
+        top: 23px;
+    }
+    #search-bar .hero-heading h2{
+        font-size: 50px;
+    }
+    .group-content h2{
+        font-size: 38px;
+        line-height: 45px;
+    }
+    .group-content h4{
+        font-size: 28px;
+        line-height: 32px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .brands{
+        text-align: center;
+    }
+    .social-items{
+        justify-content: center;
+    }
+    #search-bar .hero-heading h2{
+        font-size: 40px;
+    }
+    .las-vegas-cards{
+    background: linear-gradient(#DAE3ED,#195578);
+    flex-wrap: wrap;
+    }
+    .las-vegas-cards .las-vegas-card{
+        width: 100%;
+        padding: 0 12px;
+        margin-bottom: 20px;
+    }
+    .view-content .triptych-img{
+        float: left;
+        width: 50%;
+    }
+    .view-content .triptych-content{
+        float: right;
+        width: 50%;
+    }
+}

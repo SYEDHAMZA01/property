@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking</title>
+    <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/booking-style.css" />
+    <link rel="stylesheet" href="./assets/css/nav.css">
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-lg">
+          <a class="navbar-brand" href="./index.html">
+            <img
+              src="./assets/images/output-onlinepngtools.png"
+              class="img-fluid"
+              alt=""
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse flex-column align-items-end"
+            id="navbarSupportedContent"
+          >
+            <div>
+              <a href="#" class="las-btn me-2 text-uppercase"
+                ><i class="fa-solid fa-envelope me-1"></i> Sign up for Specials
+                and News</a
+              >
+              <a href="#" class="las-btn text-uppercase"
+                ><i class="fa-solid fa-heart me-1"></i> My Favorites</a
+              >
+            </div>
+
+            <div class="phone-number">
+              <a href="#">800-500-8779</a>
+            </div>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Our Cool Cabins
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Our Cool Cabins</a></li>
+                  <li><a class="dropdown-item" href="#">Big Bear Cabins</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Big Bear Lakefronts</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Big Bear Pet Friendly Cabins</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Big Bear Hot Tub Cabins</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Game Table Cabins</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Monthly Rentals</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Deals
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Deals</a></li>
+                  <li><a class="dropdown-item" href="#">Specials</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Exclusive Oktoberfest Packages</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Discover Big Bear
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">Discover Big Bear</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Things to Do</a></li>
+                  <li><a class="dropdown-item" href="#">Events</a></li>
+                  <li><a class="dropdown-item" href="#">Visitor Guide </a></li>
+                  <li><a class="dropdown-item" href="#">Blog</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Vacation Homes For Sale</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                  <li><a class="dropdown-item" href="#">Join Our Team!</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Guest Services
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Guest Services</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Gift Certificates</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Reservation Add-Ons </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Red Sky Travel Insurance</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Find My Reservation</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">What To Pack</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Cool Cabins Pet Friendly Info</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Dog Friendly Restaurants</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="#">FAQs</a></li>
+                  <li><a class="dropdown-item" href="#">Winter Guide</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Customer Feedback</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Owners
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Owners</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Property Management</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Owner Portal Login </a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">About Us</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Why Use A Vacation Rental Manager</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Cool Cabins Cares!</a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                  </li> -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- section -->
+
+    <section>
+      <div class="container-lg">
+        <div class="row g-0">
+          <div class="col-md-12 mt-5">
+            <h1 class="text-uppercase fw-bold main-heading">
+              SELECT PACKAGE COMPONENTS
+            </h1>
+          </div>
+          <div class="col-md-8 booking-card-left border-elephent">
+            <div class="card border-0 rounded-0">
+              <div class="row g-0 p-md-3 bg-mute">
+                <div class="col-md-5 col-sm-6 col-6">
+                  <img
+                    src="./assets/images/booking/1.jpg"
+                    class="img-fluid"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-7 col-sm-6 col-6">
+                  <div class="card-body py-sm-2 ">
+                    <h3 class="card-title">PARADISE PEAK</h3>
+                    <p class="card-text">
+                      <span class="pe-2 border-end border-dark"
+                        >3 Bedrooms</span
+                      >
+                      <span class="px-2">2 Bathroom</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 booking-card-right position-relative p-3 bg-elephant">
+            <div class="booking-content">
+              <h5>TUE AUG 30 - THU SEP 1, 2022</h5>
+              <h5>$464.00 + TAXES AND FEES</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-5">
+      <div class="container-lg">
+        <form>
+          <div class="row p-sm-3 p-2 mt-sm-3 mt-0">
+            <h6 class="travelers fw-bold">Travelers</h6>
+            <div class="package-description">Specify the total number of travelers on this reservation.</div>
+            <div class="col-6 d-flex justify-content-between gap-4">
+              <div class="from-group mt-2 w-100">
+                <label for="adults">Adults</label>
+                <select
+                  class="form-select rounded-0 text-secondary"
+                  aria-label="Default select Adults"
+                >
+                  <option selected>0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+              <div class="form-group mt-2 w-100">
+                <label for="children">Children</label>
+                <select
+                  class="form-select rounded-0 text-secondary"
+                  aria-label="Default select children"
+                >
+                  <option selected>0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row my-4">
+            <div class="col-md-4 col-sm-6 mb-3">
+              <fieldset class="form-wrapper" id="edit-charges">
+                <legend class="text-center bg-elephant">
+                  <span class="fieldset-legend"
+                    >SATURDAY OKTOBERFEST ENTRY</span
+                  >
+                </legend>
+                <div class="fieldset-wrapper-pkg p-3">
+                  <div class="package-description">
+                      <p>Extra Adult Saturday Oktoberfest Entry.  While supplies last.  Number of tickets cannot exceed number of occupants in rental.</p>
+                  </div>
+                  <div class="row g-0 border-top">
+                    <div class="col-6 pt-2 pe-2 border-end">
+                      <span><label>Adult #1</label></span>
+                      <div class="form-group">
+                      <label for="adults">Quantity</label>
+                      <select
+                        class="form-select rounded-0 text-secondary"
+                        aria-label="Default select Adults"
+                      >
+                        <option selected>-none-</option>
+                        <option value="15">1 - $15.00</option>
+                        <option value="30">2 - $30.00</option>
+                        <option value="45">3 - $45.00</option>
+                        <option value="60">4 - $60.00</option>
+                      </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="children">Comments / Requests</label>
+                      <textarea name="req" id="req"  class="form-control rounded-0" rows="2"></textarea>
+                      <small class="description">Age 17 and under.</small>
+                      </div>
+                    </div>
+                    <div class="col-6 pt-2 ps-2"></div>
+                  </div>
+                </div>
+              </fieldset>
+            </div>  
+
+            <div class="col-md-4 col-sm-6 mb-3">
+              <fieldset class="form-wrapper" id="edit-charges">
+                <legend class="text-center bg-elephant">
+                  <span class="fieldset-legend"
+                    >SATURDAY OKTOBERFEST ENTRY</span
+                  >
+                </legend>
+                <div class="fieldset-wrapper-pkg p-3">
+                  <div class="package-description">
+                      <p>Extra Adult Saturday Oktoberfest Entry.  While supplies last.  Number of tickets cannot exceed number of occupants in rental.</p>
+                  </div>
+                  <div class="row g-0 border-top">
+                    <div class="col-6 pt-2 pe-2 border-end">
+                      <span><label>Adult #1</label></span>
+                      <div class="form-group">
+                      <label for="adults">Quantity</label>
+                      <select
+                        class="form-select rounded-0 text-secondary"
+                        aria-label="Default select Adults"
+                      >
+                        <option selected>-none-</option>
+                        <option value="15">1 - $15.00</option>
+                        <option value="30">2 - $30.00</option>
+                        <option value="45">3 - $45.00</option>
+                        <option value="60">4 - $60.00</option>
+                      </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="children">Comments / Requests</label>
+                      <textarea name="req" id="req"  class="form-control rounded-0" rows="2"></textarea>
+                      <small class="description">Age 17 and under.</small>
+                      </div>
+                    </div>
+                    <div class="col-6 pt-2 ps-2"></div>
+                  </div>
+                </div>
+              </fieldset>
+            </div>  
+
+            <div class="col-md-4 col-sm-6 mb-3">
+              <fieldset class="form-wrapper" id="edit-charges">
+                <legend class="text-center bg-elephant">
+                  <span class="fieldset-legend"
+                    >FIREWOOD DELIVERY SUPREME</span
+                  >
+                </legend>
+                <div class="fieldset-wrapper-pkg p-3">
+                  <div class="package-description">
+                      <p>8 Bundles of firewood, 4 fire starters, a hot chocolate basket, and popcorn.  Conveniently delivered to your vacation rental, prior to your arrival. 1st fire all set to go. Just add the match! $195 plus tax.</p>
+                  </div>
+                  <div class="row g-0 border-top">
+                    <div class="col-12 pt-2 ">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                        />
+                        <label class="" for="terms-conditions">
+                          Select Firewood Delivery Supreme - $195.00
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="col-md-4 col-sm-6 mb-3">
+              <fieldset class="form-wrapper" id="edit-charges">
+                <legend class="text-center bg-elephant">
+                  <span class="fieldset-legend"
+                    >COZY NIGHT FIREWOOD PACKAGE</span
+                  >
+                </legend>
+                <div class="fieldset-wrapper-pkg p-3">
+                  <div class="package-description">
+                      <p>1 Bundle of firewood, one fire starter, a hot chocolate basket, and popcorn. Conveniently delivered to your vacation rental, prior to your arrival.  Perfect for a 1 night stay. $85 plus tax.</p>
+                  </div>
+                  <div class="row g-0 border-top">
+                    <div class="col-12 pt-2 ">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                        />
+                        <label class="" for="terms-conditions">
+                          Select Cozy Night Firewood Package - $85.00
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="col-md-4 col-sm-6 mb-3">
+              <fieldset class="form-wrapper" id="edit-charges">
+                <legend class="text-center bg-elephant">
+                  <span class="fieldset-legend"
+                    >ROMANCE PACKAGE</span
+                  >
+                </legend>
+                <div class="fieldset-wrapper-pkg p-3">
+                  <div class="package-description">
+                      <p>Surprise your special someone with a dozen roses, chocolate kisses, sparkling wine with glasses, rose petals, and candles. Conveniently arranged in your vacation rental, prior to your arrival. Non-alcoholic cider is available upon request. $165 plus tax</p>
+                  </div>
+                  <div class="row g-0 border-top">
+                    <div class="col-12 pt-2 ">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                        />
+                        <label class="" for="terms-conditions">
+                          Select Romance Package - $165.00
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="col-md-4 col-sm-6 mb-3">
+              <fieldset class="form-wrapper" id="edit-charges">
+                <legend class="text-center bg-elephant">
+                  <span class="fieldset-legend"
+                    >BIRTHDAY CELEBRATION</span
+                  >
+                </legend>
+                <div class="fieldset-wrapper-pkg p-3">
+                  <div class="package-description">
+                      <p>Surprise your birthday guest with a prearranged party! This memorable package includes a customizable birthday cake, candles, paper plates, forks, and napkins. Decorations include banner, balloons, and more. Conveniently delivered to your vacation rental, prior to your arrival. $145 plus tax.</p>
+                  </div>
+                  <div class="row g-0 border-top">
+                    <div class="col-12 pt-2 ">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                        />
+                        <label class="" for="terms-conditions">
+                          Select Birthday Celebration - $145.00
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="col-md-4 col-sm-6 mb-3">
+              <fieldset class="form-wrapper" id="edit-charges">
+                <legend class="text-center bg-elephant">
+                  <span class="fieldset-legend"
+                    >FOOD STOCK</span
+                  >
+                </legend>
+                <div class="fieldset-wrapper-pkg p-3">
+                  <div class="package-description">
+                      <p>Save yourself the hassle of grocery shopping and let us do it for you. After all, you are on vacation! This package includes eggs, cheese, bacon, bread, cereal, English muffins, Pop Tarts, margarine, jelly, milk, coffee, tea, orange juice, sandwich meat, hot dogs, hot dog buns, baked beans, onion, condiments, potato chips, spaghetti and sauce, fresh fruit, popcorn, cookies, soda, bottled water, and a variety of other munchies. Conveniently delivered to your vacation rental, prior to your arrival.  $185 plus tax</p>
+                  </div>
+                  <div class="row g-0 border-top">
+                    <div class="col-12 pt-2 ">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                        />
+                        <label class="" for="terms-conditions">
+                          Select Food Stock - $185.00
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="col-md-4 col-sm-6 mb-3">
+              <fieldset class="form-wrapper" id="edit-charges">
+                <legend class="text-center bg-elephant">
+                  <span class="fieldset-legend"
+                    >LARGE FIREWOOD</span
+                  >
+                </legend>
+                <div class="fieldset-wrapper-pkg p-3">
+                  <div class="package-description">
+                      <p>5 bundles of wood with 2 fire starters. Conveniently delivered to your vacation rental, prior to your arrival.  $85 plus tax.</p>
+                  </div>
+                  <div class="row g-0 border-top">
+                    <div class="col-12 pt-2 ">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                        />
+                        <label class="" for="terms-conditions">
+                          Select Large Firewood - $85.00
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="col-md-4 col-sm-6 mb-3">
+              <fieldset class="form-wrapper" id="edit-charges">
+                <legend class="text-center bg-elephant">
+                  <span class="fieldset-legend"
+                    >FLOWERS - MIXED ARRANGEMENTS</span
+                  >
+                </legend>
+                <div class="fieldset-wrapper-pkg p-3">
+                  <div class="package-description">
+                      <p>A delicate arrangement of assorted flowers, perfect for any occasion! Conveniently delivered to your vacation rental, prior to your arrival. <br/>Cost is $65</p>
+                  </div>
+                  <div class="row g-0 border-top">
+                    <div class="col-12 pt-2 ">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                        />
+                        <label class="" for="terms-conditions">
+                          Select Flowers - Mixed Arrangements - $65.00
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="col-md-4 col-sm-6 mb-3">
+              <fieldset class="form-wrapper" id="edit-charges">
+                <legend class="text-center bg-elephant">
+                  <span class="fieldset-legend"
+                    >BREAKFAST PACKAGE</span
+                  >
+                </legend>
+                <div class="fieldset-wrapper-pkg p-3">
+                  <div class="package-description">
+                      <p>Did someone say bacon? This delicious package includes a dozen eggs, bacon, sausage, cereal, pancake mix, syrup, frozen waffles, loaf of bread, strawberries, gallon of milk, orange juice, and margarine. Feeds 4-6 people. Conveniently delivered to your vacation rental, prior to your arrival. $95</p>
+                  </div>
+                  <div class="row g-0 border-top">
+                    <div class="col-12 pt-2 ">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                        />
+                        <label class="" for="terms-conditions">
+                          Select Breakfast Package - $95.00
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="col-md-4 col-sm-6 mb-3">
+              <fieldset class="form-wrapper" id="edit-charges">
+                <legend class="text-center bg-elephant">
+                  <span class="fieldset-legend"
+                    >A DOZEN ROSES</span
+                  >
+                </legend>
+                <div class="fieldset-wrapper-pkg p-3">
+                  <div class="package-description">
+                      <p>Nothing says I love you like a gorgeous bouquet of long stem roses inside a vase! Conveniently delivered to your vacation rental, prior to your arrival. $95 plus tax</p>
+                  </div>
+                  <div class="row g-0 border-top">
+                    <div class="col-12 pt-2 ">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                        />
+                        <label class="" for="terms-conditions">
+                          Select A Dozen Roses - $95.00
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="col-md-4 col-sm-6 mb-3">
+              <fieldset class="form-wrapper" id="edit-charges">
+                <legend class="text-center bg-elephant">
+                  <span class="fieldset-legend"
+                    >FRESH FRUIT BASKET</span
+                  >
+                </legend>
+                <div class="fieldset-wrapper-pkg p-3">
+                  <div class="package-description">
+                      <p>Assorted fruit beautifully arranged inside a lovely basket. Conveniently delivered to your vacation rental, prior to your arrival. $65 plus tax</p>
+                  </div>
+                  <div class="row g-0 border-top">
+                    <div class="col-12 pt-2 ">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                        />
+                        <label class="" for="terms-conditions">
+                          Select Fresh Fruit Basket - $65.00
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <button type="submit" class="btn bg-btn bg-pkg rounded-0">SELECT AND PROCEED TO CHECKOUT</button>
+          </div>
+          <!--  -->
+        </form>
+      </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer class="footer py-4" >
+      <div class="container">
+        <div class="social-items d-flex mb-5 ">
+            <div class="socical-links facebook">
+              <a href="#" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </div>
+            <div class="socical-links instagram">
+              <a href="#" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+            <div class="socical-links twitter">
+              <a href="#" target="_blank">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </div>
+            <div class="socical-links youtube">
+              <a href="#" target="_blank">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </div>
+            <div class="socical-links yelp">
+              <a href="#" target="_blank">
+                <i class="fa-brands fa-yelp"></i>
+              </a>
+            </div>
+            <div class="socical-links pinterest">
+              <a href="#">
+                <i class="fa-brands fa-pinterest-p"></i>
+              </a>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-sm-6 mb-4">
+              <div class="footer-content">
+                <h4 class="text-color fm-sans fw-bold text-uppercase">Things to Do</h4>
+                <ul class="list-group">
+                  <li class="group-item text-color"><strong>Big Bear Cool Cabins</strong></li>
+                  <li class="group-item">40375 Big Bear Blvd.</li>
+                  <li class="group-item">Big Bear Lake, CA 92315</li>
+                  <li class="group-item">Info@BigBearCoolCabins.com</li>
+                  <li class="group-item">Phone: 909-866-7374</li>
+                  <li class="group-item">Espanol:  909-217-3144</li>
+                  <li class="group-item">Text: 909-219-9681</li>
+                  <li class="group-item">Fax: 909-866-9808</li>
+                  <li class="group-item text-color"><strong>Mailing Address</strong></li>
+                  <li class="group-item">PO Box 1655</li>
+                  <li class="group-item">Big Bear Lake, CA 92315</li>
+                  <li class="group-item text-color"><strong>Company Hours</strong></li>
+                  <li class="group-item">Office:  Sun-Thur 8am-8pm, Fri 8am-</li>
+                  <li class="group-item">10pm, Sat 8am-9pm</li>
+                  <li class="group-item">Business: 24/7 at 800-550-8779</li>
+                </ul>
+              </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="footer-content">
+              <h4 class="text-color fm-sans fw-bold text-uppercase">QUICK LINKS</h4>
+              <ul class="list-group">
+                <li class="group-item"><a href="#" class="text-dark">Home</a></li>
+                <li class="group-item"><a href="#" class="text-dark" target="_blank">Find My Reservation</a></li>
+                <li class="group-item"><a href="#" class="text-dark" target="_blank">Owner Portal</a></li>
+                <li class="group-item"><a href="#" class="text-dark" target="_blank">About Us</a></li>
+                <li class="group-item"><a href="#" class="text-dark" target="_blank">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="footer-content">
+              <h4 class="text-color fm-sans fw-bold text-uppercase">WEATHER</h4>
+              <ul class="list-group">
+                <li class="group-item"><a href="#" class="text-dark" target="_blank">Click here for weather!</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="footer-content">
+              <h4 class="text-color fm-sans fw-bold text-uppercase">Things to Do</h4>
+              <form action="">
+                <select class="form-select p-1" aria-label="select property name">
+                  <option selected>--Choose--</option>
+                  <option value="1">3 Culb Lakefront Cabin</option>
+                  <option value="2">3 Little Bears Cabin</option>
+                  <option value="3">5 Kern's Cabin</option>
+                  <option value="3">A Beary Happy Cabin</option>
+                  <option value="3">A Hidden Asset</option>
+                  <option value="3">A Humble Hilltop Hideaway</option>
+                  <option value="3">A Stones Throw</option>
+                </select>
+              </form>
+            </div>
+            <div class="proud-members mt-5">
+              <h4 class="text-color fm-sans fw-bold text-uppercase">PROUD MEMBERS OF</h4>
+              <div class="brands">
+                <img src="./assets/images/brands/1.png" alt="">
+                <img src="./assets/images/brands/2.png" alt="">
+                <img src="./assets/images/brands/3.png" alt="">
+                <img src="./assets/images/brands/4.png" alt="">
+                <img src="./assets/images/brands/5.jpg" alt="">
+                <img src="./assets/images/brands/6.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-md-6 text-lg-start text-center">
+           <p class="fm-sans"> © 2022 Big Bear Cool Cabins All rights reserved.</p>
+          </div>
+          <div class="col-md-6 text-lg-end text-center">
+            <p class="fm-sans">Powered by rezFusion. Built by Bluetent</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+<!-- scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

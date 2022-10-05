@@ -1,0 +1,213 @@
+@import url('https://db.onlinewebfonts.com/t/2bb44c5570a017e1ed1082b80624bd0a.ttf?family=Rockwell Condensed');
+
+:root {
+    --bg-nav: linear-gradient(to bottom,rgba(191,212,242,0.5) 0%,rgba(255,255,255,0.8) 100%);
+    --bg-btn: #123D56;
+    --color-btn: #fff;
+    --txt-color: rgb(36,121,146);
+    --bg-property: #e9f0f9;
+    --title-color : #247992;
+    --bg-fav:rgba(36,121,146,0.9);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.header .navbar{
+    background: var(--bg-nav);
+    padding: 12px 0 3px !important;
+    z-index: 1;
+    box-shadow: 0px 3px 3px rgb(0 0 0 / 25%);
+}
+
+.navbar .navbar-brand{
+    width: 250px;
+}
+
+.navbar .las-btn{
+    border: 2px solid;
+    padding: 10px 12px;
+    border-radius: 0;
+    color: var(--color-btn);
+    background: var(--bg-btn);
+    font-family: 'Rockwell Condensed';
+    font-size: 15px;
+    letter-spacing: .05em;
+    font-weight: 400;
+    line-height: 13px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.navbar .phone-number a{
+    font-size: 48px;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--bg-btn);
+    font-family: 'Rockwell Condensed';
+}
+
+.navbar .nav-link{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--txt-color) !important;
+    font-family: 'Rockwell Condensed';
+    text-transform: uppercase;
+    padding: 10px 10px 0px !important;
+}
+
+.dropdown-menu{
+    background-color: var(--bg-btn) !important ;
+}
+
+.dropdown-item{
+    color: var(--color-btn) !important;
+    font-family: 'Rockwell Condensed';
+}
+
+.dropdown-item:hover{
+    background-color: var(--txt-color) !important;
+}
+
+.navbar .dropdown .nav-link.show::after{
+    content: '';
+    position: absolute;
+    margin: auto;
+    bottom: -3px;
+    left: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    display: block;
+    border-style: solid;
+    border-width: 10px;
+    border-color: rgba(255,255,255,0) rgba(255,255,255,0) #123D56 rgba(255,255,255,0);
+    transition: opacity .35s ease-in-out;
+}
+
+.social-items{
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+display: -ms-flexbox;  /* TWEENER - IE 10 */
+display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+display: flex; 
+}
+
+/* .row{
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+} */
+
+h1 {
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: 2.1875em;
+    font-style: normal;
+    line-height: 1.4;
+    margin-top: 0.2em;
+    margin-bottom: 6px;
+    text-rendering: optimizeLegibility;
+    text-transform: uppercase;
+    letter-spacing: .03em;
+}
+
+/* footer */
+
+/* footer */
+
+.footer{
+    background: linear-gradient(to bottom,#4a75ac 0%,white 100%);
+}
+
+
+.footer .list-group .group-item ,.footer .list-group .group-item strong ,.footer .list-group .group-item a{
+    list-style: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+}
+
+.footer .socical-links {
+    padding: 4px;
+    font-size: 20px;
+    background: var(--color-btn);
+    margin-right: 20px;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.footer .socical-links a{
+    color: var(--txt-color);
+}
+
+.footer .brands img{
+    max-height: 40px;
+    width: auto;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.socical-links.facebook:hover ,.socical-links.facebook:hover a{
+    background-color: rgb(59,89,152);
+    color: #fff;
+    transition-duration: 0.5s;
+}
+.socical-links.instagram:hover , .socical-links.instagram:hover a{
+    background-color: transparent;
+    color: #fff;
+    transition-duration: 0.5s;
+}
+.socical-links.twitter:hover , .socical-links.twitter:hover a{
+    background-color: rgb(64,153,255);
+    color: #fff;
+    transition-duration: 0.5s;
+}
+.socical-links.youtube:hover , .socical-links.youtube:hover a{
+    background-color: rgb(187,0,0);
+    color: #fff;
+    transition-duration: 0.5s;
+}
+.socical-links.yelp:hover ,.socical-links.yelp:hover a{
+    background-color: rgb(187,0,0);
+    color: #fff;
+    transition-duration: 0.5s;
+}
+.socical-links.pinterest:hover , .socical-links.pinterest:hover a{
+    background-color: rgb(187,0,0);
+    color: #fff;
+    transition-duration: 0.5s;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .navbar .navbar-brand{
+        width: 200px;
+    }
+  }
+
+@media screen and (max-width: 992px) {
+    .navbar .navbar-brand{
+        width: 150px;
+    }
+    .navbar .dropdown .nav-link.show::after{
+        bottom: auto;
+        top: 23px;
+    }
+}

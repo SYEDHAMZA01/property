@@ -1,0 +1,1532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Big Bear Cabin Rentals</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/nav.css" />
+    <link rel="stylesheet" href="./assets/css/rental.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css" integrity="sha512-ELV+xyi8IhEApPS/pSj66+Jiw+sOT1Mqkzlh8ExXihe4zfqbWkxPRi8wptXIO9g73FSlhmquFlUOuMSoXz5IRw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-light w-100">
+        <div class="container-lg">
+          <a class="navbar-brand" href="./index.html">
+            <img
+              src="./assets/images/output-onlinepngtools.png"
+              class="img-fluid"
+              alt=""
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse flex-column align-items-end"
+            id="navbarSupportedContent"
+          >
+            <div>
+              <a href="#" class="las-btn me-2 text-uppercase"
+                ><i class="fa-solid fa-envelope me-1"></i> Sign up for Specials
+                and News</a
+              >
+              <a href="#" class="las-btn text-uppercase"
+                ><i class="fa-solid fa-heart me-1"></i> My Favorites</a
+              >
+            </div>
+
+            <div class="phone-number">
+              <a href="#">800-500-8779</a>
+            </div>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Our Cool Cabins
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Our Cool Cabins</a></li>
+                  <li><a class="dropdown-item" href="#">Big Bear Cabins</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Big Bear Lakefronts</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Big Bear Pet Friendly Cabins</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Big Bear Hot Tub Cabins</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Game Table Cabins</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Monthly Rentals</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Deals
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Deals</a></li>
+                  <li><a class="dropdown-item" href="#">Specials</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Exclusive Oktoberfest Packages</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Discover Big Bear
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">Discover Big Bear</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Things to Do</a></li>
+                  <li><a class="dropdown-item" href="#">Events</a></li>
+                  <li><a class="dropdown-item" href="#">Visitor Guide </a></li>
+                  <li><a class="dropdown-item" href="#">Blog</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Vacation Homes For Sale</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                  <li><a class="dropdown-item" href="#">Join Our Team!</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Guest Services
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Guest Services</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Gift Certificates</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Reservation Add-Ons </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Red Sky Travel Insurance</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Find My Reservation</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">What To Pack</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Cool Cabins Pet Friendly Info</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Dog Friendly Restaurants</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="#">FAQs</a></li>
+                  <li><a class="dropdown-item" href="#">Winter Guide</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Customer Feedback</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Owners
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Owners</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Property Management</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Owner Portal Login </a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">About Us</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Why Use A Vacation Rental Manager</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Cool Cabins Cares!</a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                  </li> -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <div class="container-lg">
+        <div class="row py-5">
+            <div class="col-md-9">
+                <div
+                class="d-flex justify-content-md-between align-items-center flex-wrap justify-content-center"
+                >
+                <h1>BIG BEAR VACATION RENTALS</h1>
+                <a href="#" class="btn bg-btn rounded-0 mb-2"
+                    ><i class="fa-solid fa-share-nodes me-2"></i>SHARE RESULTS</a
+                >
+                </div>
+                <div class="text-content">
+                <p>
+                    With over 400 homes, cabins, and condos in all areas of Big Bear
+                    including Big Bear Lake, Big Bear City, and Fawnskin, you’re
+                    sure to find the perfect rental! Free WiFi, Hot Tubs, Pool
+                    Tables, on the Lake or near the Slopes.
+                </p>
+                <p>
+                    Choose the features you desire to book your perfect Big Bear,
+                    Southern California vacation.
+                </p>
+                </div>
+
+                <div class="post-wrapper">
+                <div class="d-flex justify-content-md-between flex-wrap">
+                  <div class="mb-2">
+                    <p class="mb-2">The following results matched your search criteria.</p>
+                    <h6 class="pt-2 border-top border-dark">Displaying 1 - 10 of 17</h6>
+                  </div>
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button
+                        class="nav-link active"
+                        id="pills-home-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-home"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-home"
+                        aria-selected="true"
+                        >
+                        <i class="fa-solid fa-list"></i> List View
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button
+                        class="nav-link "
+                        id="pills-profile-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-profile"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-profile"
+                        aria-selected="false"
+                        >
+                        <i class="fa-solid fa-border-all"></i> Grid View
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button
+                        class="nav-link"
+                        id="pills-contact-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-contact"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-contact"
+                        aria-selected="false"
+                        >
+                        <i class="fa-solid fa-location-dot"></i> Map view
+                        </button>
+                    </li>
+                    </ul>
+                </div>
+                <div class="row">
+                  <div class="mb-3 col-md-2  col-4">
+                    <label for="items-perpage" class="text-dark">Items Per Page</label>
+                    <select class="form-select rounded-0 text-secondary" aria-label="Items per Page">
+                        <option selected>Items</option>
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                        <option value="30">30</option>
+                        <option value="40">40</option>
+                        <option value="50">50</option>
+                        </select>
+                </div>
+                  <div class="mb-3 col-md-2  col-4">
+                    <label for="sort" class="text-dark">Sort By</label>
+                    <select class="form-select rounded-0 text-secondary" aria-label="Sort By">
+                        <option selected>Default</option>
+                        <option value="bed-low-to-high">Beds-low to high</option>
+                        <option value="bed-high-to-low">Beds-high to low</option>
+                        <option value="bath-low-to-high">Bath-low to high</option>
+                        <option value="bath-high-to-low">Bath-high to low</option>
+                        <option value="property-name-a-to-z">Property name-a to z</option>
+                        <option value="property-name-z-to-a">Property name-z to a</option>
+                        <option value="price-per-night-low-to-high">Price per night-low to high</option>
+                        <option value="price-per-night-high-to-low">Price per night-high to low</option>
+                        </select>
+                </div>
+                </div>
+
+                <div class="tab-content" id="pills-tabContent">
+                    <div
+                    class="tab-pane fade  show active"
+                    id="pills-home"
+                    role="tabpanel"
+                    aria-labelledby="pills-home-tab"
+                    >
+                    <div class="list-cards">
+                        <div class="list-card">
+                        <div class="row g-0">
+                            <div class="col-lg-5 col-md-12">
+                            <div class="card-img position-relative">
+                                <a href="#" class="favorites"
+                                ><i class="fa-regular fa-heart"></i
+                                ></a>
+                                <a href="./detail-page.html">
+                                <img
+                                src="./assets/images/booking/1.jpg"
+                                class="img-fluid"
+                                alt=""
+                                />
+                                </a>
+                            </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-8 py-3 ps-3">
+                            <h3 class="card-title">
+                                <a href="./detail-page.html" class="text-dark text-decoration-none">
+                                The Great Escape</a
+                                >
+                            </h3>
+                            <p class="card-text fw-bold mb-2">
+                                <span class="pe-2 border-end border-dark"
+                                >3 Bedrooms</span
+                                >
+                                <span class="px-2 border-end border-dark"
+                                >2 Bathroom</span
+                                >
+                                <span class="px-2">Sleeps 4</span>
+                            </p>
+                            <div class="item-list">
+                                <ul>
+                                <li>WiFi</li>
+                                <li>Cable TV</li>
+                                <li>DVD Player</li>
+                                <li>Washer/Dryer</li>
+                                <li>Fenced Yard</li>
+                                </ul>
+                            </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-4 pt-sm-2 pe-sm-3 p-3 pt-0">
+                            <div class="card-btn">
+                                <a href="#" class="btn">VIEW DETAILS</a>
+                            </div>
+                            <div class="pricing">
+                              <h3 class="text-center blue-txt my-3">$1,812</h3>
+                              <div class="booking-modal">
+                                <button type="button" class="btn bg-btn rounded-0 text-uppercase w-100" data-bs-toggle="modal" data-bs-target="#myModal1" data-bs-whatever="@getbootstrap">Leave reviews</button>
+                                <div class="modal custom-modal fade" id="myModal1" data-bs-backdrop="false" tabindex="-1" aria-labelledby="myModal1Label" aria-hidden="true">
+                                  <div class="modal-dialog modal-sm">
+                                    <div class="modal-content rounded-0">
+                                      <div class="modal-header rounded-0 p-2">
+                                        <span>Available Package Components</span>
+                                        <button class="btn shadow-none text-white" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                                      </div>
+                                      <div class="modal-body p-2">
+                                        <ul class="rc-addon-item-list ps-4">
+                                          <li class="addon-type-64 first">Saturday Oktoberfest Entry</li>
+                                          <li class="addon-type-64">Sunday Oktoberfest Entry</li>
+                                          <li class="addon-type-85">Cozy Night Firewood Package</li>
+                                          <li class="addon-type-65">Food Stock</li>
+                                          <li class="addon-type-85">Large Firewood</li>
+                                          <li class="addon-type-none">Flowers - Mixed Arrangements</li>
+                                          <li class="addon-type-65">Breakfast Package</li>
+                                          <li class="addon-type-59">A Dozen Roses</li>
+                                          <li class="addon-type-69 last">Fresh Fruit Basket</li>
+                                        </ul>
+                                        <a href="./booking-packages.html" class="btn bg-pkg rounded-0 w-100 mb-2">Select Package Components »</a>
+                                        <a href="./booking-form.html" class="btn bg-btn rounded-0 w-100">Book Lodging Only »</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="list-card">
+                        <div class="row g-0">
+                            <div class="col-lg-5 col-md-12">
+                            <div class="card-img position-relative">
+                                <a href="#" class="favorites"
+                                ><i class="fa-regular fa-heart"></i
+                                ></a>
+                                <a href="./detail-page.html">
+                                <img
+                                src="./assets/images/booking/2.jpg"
+                                class="img-fluid"
+                                alt=""
+                                />
+                                </a>
+                            </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-8 py-3 ps-3">
+                            <h3 class="card-title">
+                                <a href="./detail-page.html" class="text-dark text-decoration-none">
+                                The Great Escape</a
+                                >
+                            </h3>
+                            <p class="card-text fw-bold mb-2">
+                                <span class="pe-2 border-end border-dark"
+                                >3 Bedrooms</span
+                                >
+                                <span class="px-2 border-end border-dark"
+                                >2 Bathroom</span
+                                >
+                                <span class="px-2">Sleeps 4</span>
+                            </p>
+                            <div class="item-list">
+                                <ul>
+                                <li>WiFi</li>
+                                <li>Cable TV</li>
+                                <li>DVD Player</li>
+                                <li>Washer/Dryer</li>
+                                <li>Fenced Yard</li>
+                                </ul>
+                            </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-4 pt-sm-2 pe-sm-3 p-3 pt-0">
+                            <div class="card-btn">
+                                <a href="#" class="btn">VIEW DETAILS</a>
+                            </div>
+                            <div class="pricing">
+                              <h3 class="text-center blue-txt my-3">$1,812</h3>
+                              <div class="booking-modal">
+                                <button type="button" class="btn bg-btn rounded-0 text-uppercase w-100" data-bs-toggle="modal" data-bs-target="#myModal2" data-bs-whatever="@getbootstrap">Leave reviews</button>
+                                <div class="modal custom-modal fade" id="myModal2" data-bs-backdrop="false" tabindex="-1" aria-labelledby="myModal2Label" aria-hidden="true">
+                                  <div class="modal-dialog modal-sm">
+                                    <div class="modal-content rounded-0">
+                                      <div class="modal-header rounded-0 p-2">
+                                        <span>Available Package Components</span>
+                                        <button class="btn shadow-none text-white" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                                      </div>
+                                      <div class="modal-body p-2">
+                                        <ul class="rc-addon-item-list ps-4">
+                                          <li class="addon-type-64 first">Saturday Oktoberfest Entry</li>
+                                          <li class="addon-type-64">Sunday Oktoberfest Entry</li>
+                                          <li class="addon-type-85">Cozy Night Firewood Package</li>
+                                          <li class="addon-type-65">Food Stock</li>
+                                          <li class="addon-type-85">Large Firewood</li>
+                                          <li class="addon-type-none">Flowers - Mixed Arrangements</li>
+                                          <li class="addon-type-65">Breakfast Package</li>
+                                          <li class="addon-type-59">A Dozen Roses</li>
+                                          <li class="addon-type-69 last">Fresh Fruit Basket</li>
+                                        </ul>
+                                        <a href="./booking-packages.html" class="btn bg-pkg rounded-0 w-100 mb-2">Select Package Components »</a>
+                                        <a href="./booking-form.html" class="btn bg-btn rounded-0 w-100">Book Lodging Only »</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="list-card">
+                        <div class="row g-0">
+                            <div class="col-lg-5 col-md-12">
+                            <div class="card-img position-relative">
+                                <a href="#" class="favorites"
+                                ><i class="fa-regular fa-heart"></i
+                                ></a>
+                                <a href="./detail-page.html">
+                                <img
+                                src="./assets/images/booking/3.jpg"
+                                class="img-fluid"
+                                alt=""
+                                />
+                                </a>
+                            </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-8 py-3 ps-3">
+                            <h3 class="card-title">
+                                <a href="./detail-page.html" class="text-dark text-decoration-none">
+                                The Great Escape</a
+                                >
+                            </h3>
+                            <p class="card-text fw-bold mb-2">
+                                <span class="pe-2 border-end border-dark"
+                                >3 Bedrooms</span
+                                >
+                                <span class="px-2 border-end border-dark"
+                                >2 Bathroom</span
+                                >
+                                <span class="px-2">Sleeps 4</span>
+                            </p>
+                            <div class="item-list">
+                                <ul>
+                                <li>WiFi</li>
+                                <li>Cable TV</li>
+                                <li>DVD Player</li>
+                                <li>Washer/Dryer</li>
+                                <li>Fenced Yard</li>
+                                </ul>
+                            </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-4 pt-sm-2 pe-sm-3 p-3 pt-0">
+                            <div class="card-btn">
+                                <a href="#" class="btn">VIEW DETAILS</a>
+                            </div>
+                            <div class="pricing">
+                              <h3 class="text-center blue-txt my-3">$1,812</h3>
+                              <div class="booking-modal">
+                                <button type="button" class="btn bg-btn rounded-0 text-uppercase w-100" data-bs-toggle="modal" data-bs-target="#myModal3" data-bs-whatever="@getbootstrap">Leave reviews</button>
+                                <div class="modal custom-modal fade" id="myModal3" data-bs-backdrop="false" tabindex="-1" aria-labelledby="myModal3Label" aria-hidden="true">
+                                  <div class="modal-dialog modal-sm">
+                                    <div class="modal-content rounded-0">
+                                      <div class="modal-header rounded-0 p-2">
+                                        <span>Available Package Components</span>
+                                        <button class="btn shadow-none text-white" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                                      </div>
+                                      <div class="modal-body p-2">
+                                        <ul class="rc-addon-item-list ps-4">
+                                          <li class="addon-type-64 first">Saturday Oktoberfest Entry</li>
+                                          <li class="addon-type-64">Sunday Oktoberfest Entry</li>
+                                          <li class="addon-type-85">Cozy Night Firewood Package</li>
+                                          <li class="addon-type-65">Food Stock</li>
+                                          <li class="addon-type-85">Large Firewood</li>
+                                          <li class="addon-type-none">Flowers - Mixed Arrangements</li>
+                                          <li class="addon-type-65">Breakfast Package</li>
+                                          <li class="addon-type-59">A Dozen Roses</li>
+                                          <li class="addon-type-69 last">Fresh Fruit Basket</li>
+                                        </ul>
+                                        <a href="./booking-packages.html" class="btn bg-pkg rounded-0 w-100 mb-2">Select Package Components »</a>
+                                        <a href="./booking-form.html" class="btn bg-btn rounded-0 w-100">Book Lodging Only »</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="list-card">
+                        <div class="row g-0">
+                            <div class="col-lg-5 col-md-12">
+                            <div class="card-img position-relative">
+                                <a href="#" class="favorites"
+                                ><i class="fa-regular fa-heart"></i
+                                ></a>
+                                <a href="./detail-page.html">
+                                <img
+                                src="./assets/images/booking/4.jpg"
+                                class="img-fluid"
+                                alt=""
+                                />
+                                </a>
+                            </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-8 py-3 ps-3">
+                            <h3 class="card-title">
+                                <a href="./detail-page.html" class="text-dark text-decoration-none">
+                                The Great Escape</a
+                                >
+                            </h3>
+                            <p class="card-text fw-bold mb-2">
+                                <span class="pe-2 border-end border-dark"
+                                >3 Bedrooms</span
+                                >
+                                <span class="px-2 border-end border-dark"
+                                >2 Bathroom</span
+                                >
+                                <span class="px-2">Sleeps 4</span>
+                            </p>
+                            <div class="item-list">
+                                <ul>
+                                <li>WiFi</li>
+                                <li>Cable TV</li>
+                                <li>DVD Player</li>
+                                <li>Washer/Dryer</li>
+                                <li>Fenced Yard</li>
+                                </ul>
+                            </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-4 pt-sm-2 pe-sm-3 p-3 pt-0">
+                            <div class="card-btn">
+                                <a href="#" class="btn">VIEW DETAILS</a>
+                            </div>
+                            <div class="pricing">
+                              <h3 class="text-center blue-txt my-3">$1,812</h3>
+                              <div class="booking-modal">
+                                <button type="button" class="btn bg-btn rounded-0 text-uppercase w-100" data-bs-toggle="modal" data-bs-target="#myModal4" data-bs-whatever="@getbootstrap">Leave reviews</button>
+                                <div class="modal custom-modal fade" id="myModal4" data-bs-backdrop="false" tabindex="-1" aria-labelledby="myModal4Label" aria-hidden="true">
+                                  <div class="modal-dialog modal-sm">
+                                    <div class="modal-content rounded-0">
+                                      <div class="modal-header rounded-0 p-2">
+                                        <span>Available Package Components</span>
+                                        <button class="btn shadow-none text-white" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                                      </div>
+                                      <div class="modal-body p-2">
+                                        <ul class="rc-addon-item-list ps-4">
+                                          <li class="addon-type-64 first">Saturday Oktoberfest Entry</li>
+                                          <li class="addon-type-64">Sunday Oktoberfest Entry</li>
+                                          <li class="addon-type-85">Cozy Night Firewood Package</li>
+                                          <li class="addon-type-65">Food Stock</li>
+                                          <li class="addon-type-85">Large Firewood</li>
+                                          <li class="addon-type-none">Flowers - Mixed Arrangements</li>
+                                          <li class="addon-type-65">Breakfast Package</li>
+                                          <li class="addon-type-59">A Dozen Roses</li>
+                                          <li class="addon-type-69 last">Fresh Fruit Basket</li>
+                                        </ul>
+                                        <a href="./booking-packages.html" class="btn bg-pkg rounded-0 w-100 mb-2">Select Package Components »</a>
+                                        <a href="./booking-form.html" class="btn bg-btn rounded-0 w-100">Book Lodging Only »</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="list-card">
+                        <div class="row g-0">
+                            <div class="col-lg-5 col-md-12">
+                            <div class="card-img position-relative">
+                                <a href="#" class="favorites"
+                                ><i class="fa-regular fa-heart"></i
+                                ></a>
+                                <a href="./detail-page.html">
+                                <img
+                                src="./assets/images/booking/5.jpg"
+                                class="img-fluid"
+                                alt=""
+                                />
+                                </a>
+                            </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-8 py-3 ps-3">
+                            <h3 class="card-title">
+                                <a href="./detail-page.html" class="text-dark text-decoration-none">
+                                The Great Escape</a
+                                >
+                            </h3>
+                            <p class="card-text fw-bold mb-2">
+                                <span class="pe-2 border-end border-dark"
+                                >3 Bedrooms</span
+                                >
+                                <span class="px-2 border-end border-dark"
+                                >2 Bathroom</span
+                                >
+                                <span class="px-2">Sleeps 4</span>
+                            </p>
+                            <div class="item-list">
+                                <ul>
+                                <li>WiFi</li>
+                                <li>Cable TV</li>
+                                <li>DVD Player</li>
+                                <li>Washer/Dryer</li>
+                                <li>Fenced Yard</li>
+                                </ul>
+                            </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-4 pt-sm-2 pe-sm-3 p-3 pt-0">
+                            <div class="card-btn">
+                                <a href="#" class="btn">VIEW DETAILS</a>
+                            </div>
+                            <div class="pricing">
+                              <h3 class="text-center blue-txt my-3">$1,812</h3>
+                              <div class="booking-modal">
+                                <button type="button" class="btn bg-btn rounded-0 text-uppercase w-100" data-bs-toggle="modal" data-bs-target="#myModal5" data-bs-whatever="@getbootstrap">Leave reviews</button>
+                                <div class="modal custom-modal fade" id="myModal5" data-bs-backdrop="false" tabindex="-1" aria-labelledby="myModal5Label" aria-hidden="true">
+                                  <div class="modal-dialog modal-sm">
+                                    <div class="modal-content rounded-0">
+                                      <div class="modal-header rounded-0 p-2">
+                                        <span>Available Package Components</span>
+                                        <button class="btn shadow-none text-white" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                                      </div>
+                                      <div class="modal-body p-2">
+                                        <ul class="rc-addon-item-list ps-4">
+                                          <li class="addon-type-64 first">Saturday Oktoberfest Entry</li>
+                                          <li class="addon-type-64">Sunday Oktoberfest Entry</li>
+                                          <li class="addon-type-85">Cozy Night Firewood Package</li>
+                                          <li class="addon-type-65">Food Stock</li>
+                                          <li class="addon-type-85">Large Firewood</li>
+                                          <li class="addon-type-none">Flowers - Mixed Arrangements</li>
+                                          <li class="addon-type-65">Breakfast Package</li>
+                                          <li class="addon-type-59">A Dozen Roses</li>
+                                          <li class="addon-type-69 last">Fresh Fruit Basket</li>
+                                        </ul>
+                                        <a href="./booking-packages.html" class="btn bg-pkg rounded-0 w-100 mb-2">Select Package Components »</a>
+                                        <a href="./booking-form.html" class="btn bg-btn rounded-0 w-100">Book Lodging Only »</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="list-card">
+                        <div class="row g-0">
+                            <div class="col-lg-5 col-md-12">
+                            <div class="card-img position-relative">
+                                <a href="#" class="favorites"
+                                ><i class="fa-regular fa-heart"></i
+                                ></a>
+                                <a href="./detail-page.html">
+                                <img
+                                src="./assets/images/booking/6.jpg"
+                                class="img-fluid"
+                                alt=""
+                                />
+                                </a>
+                            </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-8 py-3 ps-3">
+                            <h3 class="card-title">
+                                <a href="./detail-page.html" class="text-dark text-decoration-none">
+                                The Great Escape</a
+                                >
+                            </h3>
+                            <p class="card-text fw-bold mb-2">
+                                <span class="pe-2 border-end border-dark"
+                                >3 Bedrooms</span
+                                >
+                                <span class="px-2 border-end border-dark"
+                                >2 Bathroom</span
+                                >
+                                <span class="px-2">Sleeps 4</span>
+                            </p>
+                            <div class="item-list">
+                                <ul>
+                                <li>WiFi</li>
+                                <li>Cable TV</li>
+                                <li>DVD Player</li>
+                                <li>Washer/Dryer</li>
+                                <li>Fenced Yard</li>
+                                </ul>
+                            </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-4 pt-sm-2 pe-sm-3 p-3 pt-0">
+                            <div class="card-btn">
+                                <a href="#" class="btn">VIEW DETAILS</a>
+                            </div>
+                            <div class="pricing">
+                              <h3 class="text-center blue-txt my-3">$1,812</h3>
+                              <div class="booking-modal">
+                                <button type="button" class="btn bg-btn rounded-0 text-uppercase w-100" data-bs-toggle="modal" data-bs-target="#myModal6" data-bs-whatever="@getbootstrap">Leave reviews</button>
+                                <div class="modal custom-modal fade" id="myModal6" data-bs-backdrop="false" tabindex="-1" aria-labelledby="myModal6Label" aria-hidden="true">
+                                  <div class="modal-dialog modal-sm">
+                                    <div class="modal-content rounded-0">
+                                      <div class="modal-header rounded-0 p-2">
+                                        <span>Available Package Components</span>
+                                        <button class="btn shadow-none text-white" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                                      </div>
+                                      <div class="modal-body p-2">
+                                        <ul class="rc-addon-item-list ps-4">
+                                          <li class="addon-type-64 first">Saturday Oktoberfest Entry</li>
+                                          <li class="addon-type-64">Sunday Oktoberfest Entry</li>
+                                          <li class="addon-type-85">Cozy Night Firewood Package</li>
+                                          <li class="addon-type-65">Food Stock</li>
+                                          <li class="addon-type-85">Large Firewood</li>
+                                          <li class="addon-type-none">Flowers - Mixed Arrangements</li>
+                                          <li class="addon-type-65">Breakfast Package</li>
+                                          <li class="addon-type-59">A Dozen Roses</li>
+                                          <li class="addon-type-69 last">Fresh Fruit Basket</li>
+                                        </ul>
+                                        <a href="./booking-packages.html" class="btn bg-pkg rounded-0 w-100 mb-2">Select Package Components »</a>
+                                        <a href="./booking-form.html" class="btn bg-btn rounded-0 w-100">Book Lodging Only »</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div
+                    class="tab-pane fade"
+                    id="pills-profile"
+                    role="tabpanel"
+                    aria-labelledby="pills-profile-tab"
+                    >
+                    <div class="grid-cards">
+                        <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card rounded-0">
+                            <div class="card-img">
+                                <a href="#" class="favorites"
+                                ><i class="fa-regular fa-heart"></i
+                                ></a>
+                                <a href="./detail-page.html">
+                                <img
+                                src="./assets/images/booking/1.jpg"
+                                class="img-fluid"
+                                alt="..."
+                                />
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                <a
+                                    href="#"
+                                    class="text-dark text-decoration-none"
+                                >
+                                    The Great Escape</a
+                                >
+                                </h5>
+                                <p class="card-text fw-bold">
+                                <span class="pe-2 border-end border-dark"
+                                    >3 Bedrooms</span
+                                >
+                                <span class="px-2">1 Bathroom</span>
+                                </p>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card rounded-0">
+                            <div class="card-img">
+                                <a href="#" class="favorites"
+                                ><i class="fa-regular fa-heart"></i
+                                ></a>
+                                <a href="./detail-page.html">
+                                <img
+                                src="./assets/images/booking/2.jpg"
+                                class="img-fluid"
+                                alt="..."
+                                />
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                <a
+                                    href="#"
+                                    class="text-dark text-decoration-none"
+                                >
+                                    The Great Escape</a
+                                >
+                                </h5>
+                                <p class="card-text fw-bold">
+                                <span class="pe-2 border-end border-dark"
+                                    >3 Bedrooms</span
+                                >
+                                <span class="px-2">1 Bathroom</span>
+                                </p>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card rounded-0">
+                            <div class="card-img">
+                                <a href="#" class="favorites"
+                                ><i class="fa-regular fa-heart"></i
+                                ></a>
+                                <a href="./detail-page.html">
+                                <img
+                                src="./assets/images/booking/3.jpg"
+                                class="img-fluid"
+                                alt="..."
+                                />
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                <a
+                                    href="#"
+                                    class="text-dark text-decoration-none"
+                                >
+                                    The Great Escape</a
+                                >
+                                </h5>
+                                <p class="card-text fw-bold">
+                                <span class="pe-2 border-end border-dark"
+                                    >3 Bedrooms</span
+                                >
+                                <span class="px-2">1 Bathroom</span>
+                                </p>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card rounded-0">
+                            <div class="card-img">
+                                <a href="#" class="favorites"
+                                ><i class="fa-regular fa-heart"></i
+                                ></a>
+                                <a href="./detail-page.html">
+                                <img
+                                src="./assets/images/booking/4.jpg"
+                                class="img-fluid"
+                                alt="..."
+                                />
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                <a
+                                    href="#"
+                                    class="text-dark text-decoration-none"
+                                >
+                                    The Great Escape</a
+                                >
+                                </h5>
+                                <p class="card-text fw-bold">
+                                <span class="pe-2 border-end border-dark"
+                                    >3 Bedrooms</span
+                                >
+                                <span class="px-2">1 Bathroom</span>
+                                </p>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card rounded-0">
+                            <div class="card-img">
+                                <a href="#" class="favorites"
+                                ><i class="fa-regular fa-heart"></i
+                                ></a>
+                                <a href="./detail-page.html">
+                                <img
+                                src="./assets/images/booking/5.jpg"
+                                class="img-fluid"
+                                alt="..."
+                                />
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                <a
+                                    href="#"
+                                    class="text-dark text-decoration-none"
+                                >
+                                    The Great Escape</a
+                                >
+                                </h5>
+                                <p class="card-text fw-bold">
+                                <span class="pe-2 border-end border-dark"
+                                    >3 Bedrooms</span
+                                >
+                                <span class="px-2">1 Bathroom</span>
+                                </p>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card rounded-0">
+                            <div class="card-img">
+                                <a href="#" class="favorites"
+                                ><i class="fa-regular fa-heart"></i
+                                ></a>
+                                <a href="./detail-page.html">
+                                <img
+                                src="./assets/images/booking/6.jpg"
+                                class="img-fluid"
+                                alt="..."
+                                />
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                <a
+                                    href="#"
+                                    class="text-dark text-decoration-none"
+                                >
+                                    The Great Escape</a
+                                >
+                                </h5>
+                                <p class="card-text fw-bold">
+                                <span class="pe-2 border-end border-dark"
+                                    >3 Bedrooms</span
+                                >
+                                <span class="px-2">1 Bathroom</span>
+                                </p>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div
+                    class="tab-pane fade"
+                    id="pills-contact"
+                    role="tabpanel"
+                    aria-labelledby="pills-contact-tab"
+                    >
+                    <div id="map"></div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!--Search filter -->
+            <div class="col-md-3 order-md-last order-first">
+                <button class="btn btn-search rounded d-md-none d-block w-100 mb-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-expanded="false" aria-controls="offcanvasWithBackdrop">Refine Search</button>
+            
+                <div class="search-filter p-3 text-white offcanvas offcanvas-start" tabindex="-1" data-bs-backdrop="true" id="offcanvasWithBackdrop" >
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel"></h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <h4 class="block-title text-center mb-4 d-sm-block d-none">Search Filter</h4>
+                        <form action="" autocomplete="off">
+                        <div class="mb-3">
+                            <input type="date" class="form-control rounded-0 text-secondary" />
+                        </div>
+                        <div class="mb-3">
+                            <input type="date" class="form-control rounded-0 text-secondary" />
+                        </div>
+                        <div class="mb-3">
+                            <select class="form-select rounded-0 text-secondary" aria-label="Number of Guest">
+                                <option selected>Number Of Guest</option>
+                                <option value="1">Number Of Guest: 1</option>
+                                <option value="2">Number Of Guest: 2</option>
+                                <option value="3">Number Of Guest: 3</option>
+                                <option value="4">Number Of Guest: 4</option>
+                                <option value="5">Number Of Guest: 5</option>
+                                <option value="6">Number Of Guest: 6</option>
+                                <option value="7">Number Of Guest: 7</option>
+                                <option value="8">Number Of Guest: 8</option>
+                                <option value="9">Number Of Guest: 9</option>
+                                <option value="10">Number Of Guest: 10</option>
+                                </select>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" value="" id="wifi">
+                            <label class="form-check-label" for="wifi">
+                                WiFi
+                            </label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" value="" id=" pet-friendly">
+                            <label class="form-check-label" for=" pet-friendly">
+                                Pet Friendly
+                            </label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" value="" id="pool-table">
+                            <label class="form-check-label" for="pool-table">
+                                Pool Table
+                            </label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" value="" id="hot-tub">
+                            <label class="form-check-label" for="hot-tub">
+                                Hot Tub
+                            </label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" value="" id="lakefront">
+                            <label class="form-check-label" for="lakefront">
+                                Lakefront
+                            </label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" value="" id="lake-view">
+                            <label class="form-check-label" for="lake-view">
+                                Lake View
+                            </label>
+                        </div>
+                        <div class="my-3">
+                            <a class="btn btn-search d-block" data-bs-toggle="collapse" href="#collapseFilter" role="button" aria-expanded="false" aria-controls="collapseFilter">
+                                View More Filters
+                                </a>
+                        </div>
+                        <div class="collapse" id="collapseFilter">
+                            <div class="mb-3">
+                                <select class="form-select rounded-0 text-secondary" aria-label="Bedrooms">
+                                    <option selected>Bedrooms</option>
+                                    <option value="1">Bedrooms: 1</option>
+                                    <option value="2">Bedrooms: 2</option>
+                                    <option value="3">Bedrooms: 3</option>
+                                    <option value="4">Bedrooms: 4</option>
+                                    <option value="5">Bedrooms: 5</option>
+                                    <option value="6">Bedrooms: 6</option>
+                                    <option value="7">Bedrooms: 7</option>
+                                    <option value="8">Bedrooms: 8</option>
+                                    <option value="9">Bedrooms: 9</option>
+                                    <option value="10">Bedrooms: 10</option>
+                                    </select>
+                            </div>
+                            <div class="mb-3">
+                                <select class="form-select rounded-0 text-secondary" aria-label="Bathrooms">
+                                    <option selected>Bathrooms</option>
+                                    <option value="1">Bathrooms: 1</option>
+                                    <option value="2">Bathrooms: 2</option>
+                                    <option value="3">Bathrooms: 3</option>
+                                    <option value="4">Bathrooms: 4</option>
+                                    <option value="5">Bathrooms: 5</option>
+                                    <option value="6">Bathrooms: 6</option>
+                                    <option value="7">Bathrooms: 7</option>
+                                    <option value="8">Bathrooms: 8</option>
+                                    <option value="9">Bathrooms: 9</option>
+                                    <option value="10">Bathrooms: 10</option>
+                                    </select>
+                            </div>
+                            <div class="mb-3">
+                                <select class="form-select rounded-0 text-secondary" aria-label="Area">
+                                    <option selected>Area</option>
+                                    <option value="big-bear-city">Area: Big Bear City</option>
+                                    <option value="central-big-bear">Area: Central Big Bear</option>
+                                    <option value="fawnskin">Area: fawnskin</option>
+                                    <option value="gulf-course">Area: Gulf Course</option>
+                                    <option value="lakefront">Area: Lakefront</option>
+                                    </select>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" value="" id="foosball-table">
+                                <label class="form-check-label" for="foosball-table">
+                                    Foosball Table
+                                </label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" value="" id="ping-pong-table">
+                                <label class="form-check-label" for="ping-pong-table">
+                                    Ping Pong Table
+                                </label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" value="" id="washer/dryer">
+                                <label class="form-check-label" for="washer/dryer">
+                                    Washer/Dryer
+                                </label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" value="" id="fenced-yard">
+                                <label class="form-check-label" for="fenced-yard">
+                                    Fenced Yard
+                                </label>
+                            </div>
+                        </div>
+                        <div class="my-3">
+                            <button type="submit" class="btn btn-search w-100">Search</button>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="search-filter p-3 text-white d-md-block d-none">
+                    <h4 class="block-title text-center mb-4 d-sm-block d-none">Search Filter</h4>
+                    <form action="" autocomplete="off">
+                      <div class="mb-3">
+                        <input
+                            type="text"
+                            id="arrival"
+                            name="arrival"
+                            class="form-control rounded-0 text-secondary"
+                        />
+                      </div>
+                      <div class="mb-3">
+                          <input 
+                            type="text"
+                            name="departure"
+                            id="departure" 
+                            class="form-control rounded-0 text-secondary" 
+                           />
+                      </div>
+                      <div class="mb-3">
+                          <select class="form-select rounded-0 text-secondary" aria-label="Number of Guest">
+                              <option selected>Number Of Guest</option>
+                              <option value="1">Number Of Guest: 1</option>
+                              <option value="2">Number Of Guest: 2</option>
+                              <option value="3">Number Of Guest: 3</option>
+                              <option value="4">Number Of Guest: 4</option>
+                              <option value="5">Number Of Guest: 5</option>
+                              <option value="6">Number Of Guest: 6</option>
+                              <option value="7">Number Of Guest: 7</option>
+                              <option value="8">Number Of Guest: 8</option>
+                              <option value="9">Number Of Guest: 9</option>
+                              <option value="10">Number Of Guest: 10</option>
+                            </select>
+                      </div>
+                      <div class="form-check mb-2">
+                          <input class="form-check-input" type="checkbox" value="" id="wifi">
+                          <label class="form-check-label" for="wifi">
+                            WiFi
+                          </label>
+                      </div>
+                      <div class="form-check mb-2">
+                          <input class="form-check-input" type="checkbox" value="" id=" pet-friendly">
+                          <label class="form-check-label" for=" pet-friendly">
+                              Pet Friendly
+                          </label>
+                      </div>
+                      <div class="form-check mb-2">
+                          <input class="form-check-input" type="checkbox" value="" id="pool-table">
+                          <label class="form-check-label" for="pool-table">
+                              Pool Table
+                          </label>
+                      </div>
+                      <div class="form-check mb-2">
+                          <input class="form-check-input" type="checkbox" value="" id="hot-tub">
+                          <label class="form-check-label" for="hot-tub">
+                              Hot Tub
+                          </label>
+                      </div>
+                      <div class="form-check mb-2">
+                          <input class="form-check-input" type="checkbox" value="" id="lakefront">
+                          <label class="form-check-label" for="lakefront">
+                              Lakefront
+                          </label>
+                      </div>
+                      <div class="form-check mb-2">
+                          <input class="form-check-input" type="checkbox" value="" id="lake-view">
+                          <label class="form-check-label" for="lake-view">
+                              Lake View
+                          </label>
+                      </div>
+                      <div class="my-3">
+                          <a class="btn btn-search d-block" data-bs-toggle="collapse" href="#collapseFilter" role="button" aria-expanded="false" aria-controls="collapseFilter">
+                              View More Filters
+                            </a>
+                      </div>
+                      <div class="collapse" id="collapseFilter">
+                          <div class="mb-3">
+                              <select class="form-select rounded-0 text-secondary" aria-label="Bedrooms">
+                                  <option selected>Bedrooms</option>
+                                  <option value="1">Bedrooms: 1</option>
+                                  <option value="2">Bedrooms: 2</option>
+                                  <option value="3">Bedrooms: 3</option>
+                                  <option value="4">Bedrooms: 4</option>
+                                  <option value="5">Bedrooms: 5</option>
+                                  <option value="6">Bedrooms: 6</option>
+                                  <option value="7">Bedrooms: 7</option>
+                                  <option value="8">Bedrooms: 8</option>
+                                  <option value="9">Bedrooms: 9</option>
+                                  <option value="10">Bedrooms: 10</option>
+                                </select>
+                          </div>
+                          <div class="mb-3">
+                              <select class="form-select rounded-0 text-secondary" aria-label="Bathrooms">
+                                  <option selected>Bathrooms</option>
+                                  <option value="1">Bathrooms: 1</option>
+                                  <option value="2">Bathrooms: 2</option>
+                                  <option value="3">Bathrooms: 3</option>
+                                  <option value="4">Bathrooms: 4</option>
+                                  <option value="5">Bathrooms: 5</option>
+                                  <option value="6">Bathrooms: 6</option>
+                                  <option value="7">Bathrooms: 7</option>
+                                  <option value="8">Bathrooms: 8</option>
+                                  <option value="9">Bathrooms: 9</option>
+                                  <option value="10">Bathrooms: 10</option>
+                                </select>
+                          </div>
+                          <div class="mb-3">
+                              <select class="form-select rounded-0 text-secondary" aria-label="Area">
+                                  <option selected>Area</option>
+                                  <option value="big-bear-city">Area: Big Bear City</option>
+                                  <option value="central-big-bear">Area: Central Big Bear</option>
+                                  <option value="fawnskin">Area: fawnskin</option>
+                                  <option value="gulf-course">Area: Gulf Course</option>
+                                  <option value="lakefront">Area: Lakefront</option>
+                                </select>
+                          </div>
+                          <div class="form-check mb-2">
+                              <input class="form-check-input" type="checkbox" value="" id="foosball-table">
+                              <label class="form-check-label" for="foosball-table">
+                                  Foosball Table
+                              </label>
+                          </div>
+                          <div class="form-check mb-2">
+                              <input class="form-check-input" type="checkbox" value="" id="ping-pong-table">
+                              <label class="form-check-label" for="ping-pong-table">
+                                  Ping Pong Table
+                              </label>
+                          </div>
+                          <div class="form-check mb-2">
+                              <input class="form-check-input" type="checkbox" value="" id="washer/dryer">
+                              <label class="form-check-label" for="washer/dryer">
+                                  Washer/Dryer
+                              </label>
+                          </div>
+                          <div class="form-check mb-2">
+                              <input class="form-check-input" type="checkbox" value="" id="fenced-yard">
+                              <label class="form-check-label" for="fenced-yard">
+                                  Fenced Yard
+                              </label>
+                          </div>
+                      </div>
+                      <div class="my-3">
+                          <button type="submit" class="btn btn-search w-100">Search</button>
+                      </div>
+      
+      
+                      <!-- <div class="mb-3">
+                          <label for="sort" class="text-dark">Sort By</label>
+                          <select class="form-select rounded-0 text-secondary" aria-label="Sort By">
+                              <option selected>Default</option>
+                              <option value="bed-low-to-high">Beds-low to high</option>
+                              <option value="bed-high-to-low">Beds-high to low</option>
+                              <option value="bath-low-to-high">Bath-low to high</option>
+                              <option value="bath-high-to-low">Bath-high to low</option>
+                              <option value="property-name-a-to-z">Property name-a to z</option>
+                              <option value="property-name-z-to-a">Property name-z to a</option>
+                              <option value="price-per-night-low-to-high">Price per night-low to high</option>
+                              <option value="price-per-night-high-to-low">Price per night-high to low</option>
+                            </select>
+                      </div>
+                      <div class="mb-3">
+                          <label for="items-perpage" class="text-dark">Items Per Page</label>
+                          <select class="form-select rounded-0 text-secondary" aria-label="Items per Page">
+                              <option selected>Items</option>
+                              <option value="10">10</option>
+                              <option value="20">20</option>
+                              <option value="30">30</option>
+                              <option value="40">40</option>
+                              <option value="50">50</option>
+                            </select>
+                      </div> -->
+      
+      
+      
+      
+                    </form>
+                  </div>
+            </div>
+            
+        </div>
+      </div>
+    </section>
+
+
+    <!-- footer -->
+
+    <footer class="footer py-4" >
+      <div class="container">
+        <div class="social-items d-flex mb-5 ">
+            <div class="socical-links facebook">
+              <a href="#" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </div>
+            <div class="socical-links instagram">
+              <a href="#" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+            <div class="socical-links twitter">
+              <a href="#" target="_blank">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </div>
+            <div class="socical-links youtube">
+              <a href="#" target="_blank">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </div>
+            <div class="socical-links yelp">
+              <a href="#" target="_blank">
+                <i class="fa-brands fa-yelp"></i>
+              </a>
+            </div>
+            <div class="socical-links pinterest">
+              <a href="#">
+                <i class="fa-brands fa-pinterest-p"></i>
+              </a>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-sm-6 mb-4">
+              <div class="footer-content">
+                <h4 class="text-color fm-sans fw-bold text-uppercase">Things to Do</h4>
+                <ul class="list-group">
+                  <li class="group-item text-color"><strong>Big Bear Cool Cabins</strong></li>
+                  <li class="group-item">40375 Big Bear Blvd.</li>
+                  <li class="group-item">Big Bear Lake, CA 92315</li>
+                  <li class="group-item">Info@BigBearCoolCabins.com</li>
+                  <li class="group-item">Phone: 909-866-7374</li>
+                  <li class="group-item">Espanol:  909-217-3144</li>
+                  <li class="group-item">Text: 909-219-9681</li>
+                  <li class="group-item">Fax: 909-866-9808</li>
+                  <li class="group-item text-color"><strong>Mailing Address</strong></li>
+                  <li class="group-item">PO Box 1655</li>
+                  <li class="group-item">Big Bear Lake, CA 92315</li>
+                  <li class="group-item text-color"><strong>Company Hours</strong></li>
+                  <li class="group-item">Office:  Sun-Thur 8am-8pm, Fri 8am-</li>
+                  <li class="group-item">10pm, Sat 8am-9pm</li>
+                  <li class="group-item">Business: 24/7 at 800-550-8779</li>
+                </ul>
+              </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="footer-content">
+              <h4 class="text-color fm-sans fw-bold text-uppercase">QUICK LINKS</h4>
+              <ul class="list-group">
+                <li class="group-item"><a href="#" class="text-dark">Home</a></li>
+                <li class="group-item"><a href="#" class="text-dark" target="_blank">Find My Reservation</a></li>
+                <li class="group-item"><a href="#" class="text-dark" target="_blank">Owner Portal</a></li>
+                <li class="group-item"><a href="#" class="text-dark" target="_blank">About Us</a></li>
+                <li class="group-item"><a href="#" class="text-dark" target="_blank">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="footer-content">
+              <h4 class="text-color fm-sans fw-bold text-uppercase">WEATHER</h4>
+              <ul class="list-group">
+                <li class="group-item"><a href="#" class="text-dark" target="_blank">Click here for weather!</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="footer-content">
+              <h4 class="text-color fm-sans fw-bold text-uppercase">Things to Do</h4>
+              <form action="">
+                <select class="form-select p-1" aria-label="select property name">
+                  <option selected>--Choose--</option>
+                  <option value="1">3 Culb Lakefront Cabin</option>
+                  <option value="2">3 Little Bears Cabin</option>
+                  <option value="3">5 Kern's Cabin</option>
+                  <option value="3">A Beary Happy Cabin</option>
+                  <option value="3">A Hidden Asset</option>
+                  <option value="3">A Humble Hilltop Hideaway</option>
+                  <option value="3">A Stones Throw</option>
+                </select>
+              </form>
+            </div>
+            <div class="proud-members mt-5">
+              <h4 class="text-color fm-sans fw-bold text-uppercase">PROUD MEMBERS OF</h4>
+              <div class="brands">
+                <img src="./assets/images/brands/1.png" alt="">
+                <img src="./assets/images/brands/2.png" alt="">
+                <img src="./assets/images/brands/3.png" alt="">
+                <img src="./assets/images/brands/4.png" alt="">
+                <img src="./assets/images/brands/5.jpg" alt="">
+                <img src="./assets/images/brands/6.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-md-6 text-lg-start text-center">
+           <p class="fm-sans"> © 2022 Big Bear Cool Cabins All rights reserved.</p>
+          </div>
+          <div class="col-md-6 text-lg-end text-center">
+            <p class="fm-sans">Powered by rezFusion. Built by Bluetent</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <!-- scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" src="./assets/js/datePicker.js"></script>
+<script>
+  $(document).ready($(function(){
+    $(".modal").draggable({
+    handle: ".modal-header"
+  });
+  }))
+ 
+</script>
+<script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+      defer
+    ></script>
+    <script src="./assets/js/google-map.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

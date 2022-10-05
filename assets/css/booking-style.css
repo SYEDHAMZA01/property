@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+/* @import url('https://db.onlinewebfonts.com/t/2bb44c5570a017e1ed1082b80624bd0a.ttf?family=Rockwell Condensed'); */
+
+:root {
+    --bg-nav: linear-gradient(to bottom,rgba(191,212,242,0.5) 0%,rgba(255,255,255,0.8) 100%);
+    --elephant: #123D56;
+    --elephent-light: #247992;
+    --rich-maroon: #ae2e5a;
+    --white: #ffffff;
+    --Whisper: #ececec;
+    --gray-shade: #7f7f7f;
+    --alice-blue: #DAE3ED;
+    --light-steel-blue:	#B8C9DC;
+    --blue-NCS : #2888BF;
+    --gainsboro: #dddddd;
+    --eerie-black: #222222;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:"Source Sans Pro",sans-serif;
+}
+
+p {
+    font-family: sans-serif;
+    font-weight: 400;
+    letter-spacing: .03em;
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 1.25em;
+    text-rendering: optimizeLegibility;
+}
+
+label{
+    font-size: 0.875em;
+    font-weight: 600;
+    font-style: normal;
+    color: #000;
+    height: auto;
+    margin-bottom: 2px;
+    font-family:"Source Sans Pro",sans-serif;
+}
+
+.bg-btn{
+    background-color: var(--elephent-light);
+    color: var(--white);
+    transition-duration: 0.5s;
+}
+
+.bg-btn:hover{
+    background-color: var(--rich-maroon);
+    color: var(--white);
+    transition-duration: 0.5s;
+}
+
+.main-heading{
+    color: var(--elephent-light);
+    font-size: 2.1875em;
+    font-style: normal;
+    line-height: 1.4;
+    margin-top: 0.2em;
+    margin-bottom: 6px;
+    text-rendering: optimizeLegibility;
+    letter-spacing: .03em;
+}
+
+.booking-card-left .card{
+    background-color: var(--Whisper);
+    color: var(--elephant);
+}
+
+.booking-card-right{
+    background-color: var(--elephent-light);
+    color: var(--white);
+}
+
+.booking-card-right::after{
+    content: '';
+    position: absolute;
+    left: -30px;
+    top: 0;
+    bottom: 0;
+    display: block;
+    height: 0;
+    margin: auto;
+    border-style: solid;
+    border-width: 15px;
+    border-color: rgba(255,255,255,0) var(--elephent-light) rgba(255,255,255,0) rgba(255,255,255,0);
+}
+
+/* 2nd row */
+
+legend{
+    color: var(--white);
+    display: block;
+    min-height: 30px;
+    font-family: "Source Sans Pro",sans-serif;
+    padding: 8px 0;
+    margin: 0px;
+    margin-bottom: 0px !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 16px;
+    background: var(--gray-shade);
+}
+
+.fieldset-wrapper , .fieldset-wrapper-pkg{
+    position: relative;
+    /* padding-left: 15px;
+    padding-right: 15px; */
+    width: 100%;
+    float: left;
+    padding-top: 10px;
+    border: solid 1px var(--gainsboro);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top: none;
+    background: var(--Whisper);
+    margin-top: 0px;
+    width: 100%;
+    clear: both;
+}
+
+.fieldset-wrapper table tr th , .fieldset-wrapper-pkg table tr th, table tr td {
+    padding: 0.5625em 0.625em !important;
+    font-size: 1em;
+    color: var(--eerie-black);
+    letter-spacing: .03em;
+    line-height: 1;
+}
+
+table .amount{
+    text-align: right;
+    vertical-align: middle;
+}
+
+.form-check-label{
+    display: inline;
+    font-size: 20px;
+    color: var(--rich-maroon);
+    font-weight: 400;
+    line-height: 15px;
+    font-family:"Source Sans Pro",sans-serif;
+}
+
+form .description {
+    font-size: 0.625em;
+    font-style: italic;
+    position: relative;
+    /* top: 0.25em; */
+    font-family: Arial,Helvetica,"Nimbus Sans L",sans-serif;
+    color: var(--elephent-light);
+    margin-bottom: 15px;
+}
+
+.accepted-payments .card-icon {
+    width: 51px;
+    height: 32px;
+    margin: 6px;
+    display: inline-block;
+}
+.accepted-payments .card-icon.amex, .accepted-payments .card-icon.discover, .accepted-payments .card-icon.jcb, .accepted-payments .card-icon.mastercard, .accepted-payments .card-icon.visa {
+    background-image: url(https://www.bigbearcoolcabins.com/sites/all/modules/rescms/rc_core/images/creditcards-s6aa609296a.png);
+    background-repeat: no-repeat;
+}
+
+.accepted-payments .card-icon.visa {
+    background-position: 0 -192px;
+}
+
+.accepted-payments .card-icon.mastercard {
+    background-position: 0 -144px;
+}
+.accepted-payments .card-icon.amex {
+    background-position: 0 0;
+}
+
+.accepted-payments .card-icon.discover {
+    background-position: 0 -48px;
+}
+
+/* package */
+
+.bg-elephant{
+    background-color: var(--elephant);
+}
+.booking-card-right.bg-elephant::after{
+    border-color: rgba(255,255,255,0) var(--elephant) rgba(255,255,255,0) rgba(255,255,255,0);
+}
+.border-elephent{
+    border: 1px solid var(--elephant);
+}
+.row.border-top , .col-6.border-end{
+    border-color: var(--blue-NCS) !important;
+}
+.fieldset-wrapper-pkg{
+    border-color: var(--blue-NCS);
+}
+.bg-pkg{
+    background-color: var(--rich-maroon);
+}
+
+
+@media screen and (max-width:767px) {
+    .main-heading{
+        font-size: 1.5625em;
+    }
+    .booking-card-left .card{
+        background-color: var(--white);
+    }
+
+    .booking-card-right{
+        background: var(--alice-blue);
+        color: var(--elephant);
+        text-align: center;
+        border: none;
+        margin-bottom: 20px;
+        border: solid 1px var(--light-steel-blue);
+        border-top: none;
+    }
+    .booking-card-right::after{
+        display: none  ;
+    }
+
+}

@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css"
+    />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css" integrity="sha512-ELV+xyi8IhEApPS/pSj66+Jiw+sOT1Mqkzlh8ExXihe4zfqbWkxPRi8wptXIO9g73FSlhmquFlUOuMSoXz5IRw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/nav.css" />
+    <link rel="stylesheet" href="./assets/css/detail-page.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-light w-100">
+        <div class="container-lg">
+          <a class="navbar-brand" href="./index.html">
+            <img
+              src="./assets/images/output-onlinepngtools.png"
+              class="img-fluid"
+              alt=""
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse flex-column align-items-end"
+            id="navbarSupportedContent"
+          >
+            <div>
+              <a href="#" class="las-btn me-2 text-uppercase"
+                ><i class="fa-solid fa-envelope me-1"></i> Sign up for Specials
+                and News</a
+              >
+              <a href="#" class="las-btn text-uppercase"
+                ><i class="fa-solid fa-heart me-1"></i> My Favorites</a
+              >
+            </div>
+
+            <div class="phone-number">
+              <a href="#">800-500-8779</a>
+            </div>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Our Cool Cabins
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Our Cool Cabins</a></li>
+                  <li><a class="dropdown-item" href="#">Big Bear Cabins</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Big Bear Lakefronts</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Big Bear Pet Friendly Cabins</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Big Bear Hot Tub Cabins</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Game Table Cabins</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Monthly Rentals</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Deals
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Deals</a></li>
+                  <li><a class="dropdown-item" href="#">Specials</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Exclusive Oktoberfest Packages</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Discover Big Bear
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">Discover Big Bear</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Things to Do</a></li>
+                  <li><a class="dropdown-item" href="#">Events</a></li>
+                  <li><a class="dropdown-item" href="#">Visitor Guide </a></li>
+                  <li><a class="dropdown-item" href="#">Blog</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Vacation Homes For Sale</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                  <li><a class="dropdown-item" href="#">Join Our Team!</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Guest Services
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Guest Services</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Gift Certificates</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Reservation Add-Ons </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Red Sky Travel Insurance</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Find My Reservation</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">What To Pack</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Cool Cabins Pet Friendly Info</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Dog Friendly Restaurants</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="#">FAQs</a></li>
+                  <li><a class="dropdown-item" href="#">Winter Guide</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Customer Feedback</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Owners
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Owners</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Property Management</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Owner Portal Login </a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">About Us</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Why Use A Vacation Rental Manager</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Cool Cabins Cares!</a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                  </li> -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <div class="container-lg py-5">
+        <div class="d-flex justify-content-between flex-wrap gap-10">
+          <h2 class="main-heading">COMFY CUBBY</h2>
+          <h2 class="main-heading">2 BR / 1.5 BA</h2>
+        </div>
+        <div class="row g-0">
+          <div class="col-md-8">
+            <div class="property-slider p-2">
+              <div class="info-wrapper">
+                <a href="#"><i class="fa-solid fa-pen"></i> Request info</a>
+                <a href="#"
+                  ><i class="fa-regular fa-heart"></i> Add to Favorites</a
+                >
+                <a href="#"><i class="fa-solid fa-print"></i> Print</a>
+                <a href="#"
+                  ><i class="fa-solid fa-share-nodes"></i> Share Listing</a
+                >
+              </div>
+              <section
+                class="splide p-0"
+                id="main-slider"
+                aria-label="header Slide"
+              >
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide">
+                      <img
+                        src="./assets/images/booking/1.jpg"
+                        class="w-100 img-fluid h-100"
+                        alt=""
+                      />
+                    </li>
+                    <li class="splide__slide">
+                      <img
+                        src="./assets/images/booking/2.jpg"
+                        class="w-100 img-fluid h-100"
+                        alt=""
+                      />
+                    </li>
+                    <li class="splide__slide">
+                      <img
+                        src="./assets/images/booking/3.jpg"
+                        class="w-100 img-fluid h-100"
+                        alt=""
+                      />
+                    </li>
+                    <li class="splide__slide">
+                      <img
+                        src="./assets/images/booking/4.jpg"
+                        class="w-100 img-fluid h-100"
+                        alt=""
+                      />
+                    </li>
+                    <li class="splide__slide">
+                      <img
+                        src="./assets/images/booking/5.jpg"
+                        class="w-100 img-fluid h-100"
+                        alt=""
+                      />
+                    </li>
+                    <li class="splide__slide">
+                      <img
+                        src="./assets/images/booking/6.jpg"
+                        class="w-100 img-fluid h-100"
+                        alt=""
+                      />
+                    </li>
+                    <li class="splide__slide">
+                      <img
+                        src="./assets/images/booking/4.jpg"
+                        class="w-100 img-fluid h-100"
+                        alt=""
+                      />
+                    </li>
+                    <li class="splide__slide">
+                      <img
+                        src="./assets/images/booking/5.jpg"
+                        class="w-100 img-fluid h-100"
+                        alt=""
+                      />
+                    </li>
+                    <li class="splide__slide">
+                      <img
+                        src="./assets/images/booking/6.jpg"
+                        class="w-100 img-fluid h-100"
+                        alt=""
+                      />
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              <section
+                class="splide p-0"
+                id="thumbnail-slider"
+                aria-label="header Slide"
+              >
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide">
+                      <img
+                        src="./assets/images/booking/1.jpg"
+                        class="w-100 img-fluid h-100"
+                        alt=""
+                      />
+                    </li>
+                    <li class="splide__slide">
+                      <img
+                        src="./assets/images/booking/2.jpg"
+                        class="w-100 img-fluid h-100"
+                        alt=""
+                      />
+                    </li>
+                    <li class="splide__slide">
+                      <img
+                        src="./assets/images/booking/3.jpg"
+                        class="w-100 img-fluid h-100"
+                        alt=""
+                      />
+                    </li>
+                    <li class="splide__slide">
+                      <img
+                        src="./assets/images/booking/4.jpg"
+                        class="w-100 img-fluid h-100"
+                        alt=""
+                      />
+                    </li>
+                    <li class="splide__slide">
+                      <img
+                        src="./assets/images/booking/5.jpg"
+                        class="w-100 img-fluid h-100"
+                        alt=""
+                      />
+                    </li>
+                    <li class="splide__slide">
+                      <img
+                        src="./assets/images/booking/6.jpg"
+                        class="w-100 img-fluid h-100"
+                        alt=""
+                      />
+                    </li>
+                    <li class="splide__slide">
+                      <img
+                        src="./assets/images/booking/4.jpg"
+                        class="w-100 img-fluid h-100"
+                        alt=""
+                      />
+                    </li>
+                    <li class="splide__slide">
+                      <img
+                        src="./assets/images/booking/5.jpg"
+                        class="w-100 img-fluid h-100"
+                        alt=""
+                      />
+                    </li>
+                    <li class="splide__slide">
+                      <img
+                        src="./assets/images/booking/6.jpg"
+                        class="w-100 img-fluid h-100"
+                        alt=""
+                      />
+                    </li>
+                  </ul>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="search-available p-3 border-top-0">
+              <h4 class="block-title text-center mb-4 fm-candensed">
+                Search Availability
+              </h4>
+              <form action="" autocomplete="off">
+                <div class="row">
+                  <div class="col-6 mb-3">
+                    <label class="fw-bold text-white" for="arrival">Arrival*</label>
+                    <input
+                      type="text"
+                       id="arrival"
+                      name="arrival"
+                      class="form-control bg-light rounded-0"
+                    />
+                  </div>
+                  <div class="col-6 mb-3">
+                    <label class="fw-bold text-white" for="departure">Departure*</label>
+                    <input
+                      type="text"
+                      name="departure"
+                      id="departure"
+                      class="form-control bg-light rounded-0"
+                    />
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <button
+                    type="submit"
+                    class="btn btn-transparent text-white border-2 border-white w-100 rounded-0"
+                  >
+                    Search
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="features-wraper text-md-start text-center mt-4 ps-3">
+              <h3>Featured Amenities:</h3>
+              <ul class="list-group">
+                <li class="list-item">Walk to Ski or Shuttle</li>
+                <li class="list-item">WiFi</li>
+                <li class="list-item">Fenced Yard</li>
+                <li class="list-item">Fireplace</li>
+                <li class="list-item">Cable TV</li>
+                <li class="list-item">DVD Player</li>
+                <li class="list-item">Deck</li>
+                <li class="list-item">Barbecue</li>
+                <li class="list-item">Sleeps 4ss</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="details">
+      <div class="container-lg">
+        <div class="row mb-5">
+          <div class="col-md-12">
+            <div class="las-vegas-details pb-4">
+              <ul
+                class="nav nav-pills flex-wrap"
+                id="pills-tab"
+                role="tablist"
+              >
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="btn w-100 active"
+                    id="description-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-description"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-description"
+                    aria-selected="true"
+                  >
+                    description
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="btn w-100"
+                    id="amenities-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-amenities"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-amenities"
+                    aria-selected="false"
+                  >
+                    amenities
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="btn w-100"
+                    id="availability-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-availability"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-availability"
+                    aria-selected="false"
+                  >
+                    availability
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="btn w-100"
+                    id="location-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-location"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-location"
+                    aria-selected="false"
+                  >
+                    location
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="btn w-100"
+                    id="reviews-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-reviews"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-reviews"
+                    aria-selected="false"
+                  >
+                    reviews
+                  </button>
+                </li>
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="pills-description"
+                  role="tabpanel"
+                  aria-labelledby="description-tab"
+                >
+                  <div class="description-content">
+                    <p>
+                      WALK TO SLOPES! Comfy Cubby is perfect for everyone.
+                      Located in a beautiful, desirable area of Big Bear close
+                      to Bear Mountain Ski Resort and just a short drive to the
+                      lake, Village, and more. This gorgeous home comes equipped
+                      with everything you need for a relaxing mountain getaway!
+                    </p>
+                    <p>
+                      LIVING SPACE - 2 bedroom, 1.5 bath. Cozy 850+ sq ft home
+                      with living room, dining table, a beautiful gas fireplace,
+                      and plenty of comfortable living room seating. First
+                      bedroom has a queen bed. Second bedroom has a double bed.
+                      Extra blankets and pillows are available.&nbsp;
+                    </p>
+                    <p>
+                      KITCHEN - Stove, toaster oven, refrigerator, microwave,
+                      blender, coffee maker, crockpot, rice cooker, dishes,
+                      pots/pans, spice rack, and more.&nbsp;
+                    </p>
+                    <p>
+                      AMENITIES - Board games include Cards Against Humanity
+                      Family Edition, Chutes and Ladders, and more. This home
+                      offers cable TV along with fast WiFi and Blu-ray DVD
+                      player. Relax near the cozy fireplace.&nbsp;
+                    </p>
+                    <p>
+                      OUTDOORS - Charcoal barbecue, outdoor table, and chairs.
+                      Enjoy the fenced yard and large front and side
+                      decks!&nbsp;
+                    </p>
+                    <p>Parking - 2 vehicle driveway.&nbsp;</p>
+                    <p>
+                      Other things to note:<br />Minimum renter age: 21<br />Maximum
+                      occupancy 4<br />Sorry, the Comfy Cubby does not accept
+                      pets<br />Check in after 4 pm<br />Check out before 11 am
+                      (before 10 am 12/17-1/7)<br />Permit #VRR-2022-1621
+                    </p>
+                    <p>
+                      Bear Mountain - close walk<br />Snow Summit - 2.2 miles<br />Lake
+                      - 2.3 miles<br />Oktoberfest - 3.3 miles<br />Village -
+                      3.4 miles
+                    </p>
+                    <p>
+                      Coupon Details:<br />Winter - Free ski/snowboard rental!
+                      10% off any additional equipment<br />Spring, Summer, Fall
+                      - Free bike, kayak, or paddle board rental
+                    </p>
+                    <p>
+                      <a
+                        href="#"
+                        >Good Neighbor Policy</a>
+                    </p>
+                  </div>
+                </div>
+                <!-- amenities -->
+                <div
+                  class="tab-pane fade"
+                  id="pills-amenities"
+                  role="tabpanel"
+                  aria-labelledby="amenities-tab"
+                >
+                <div class="amenities"><ul class="item-list m-0 p-0  d-flex flex-wrap"><li>DVD player</li><li>Fenced Yard</li><li>Walk to Ski or Shuttle</li><li>Internet</li><li>TV</li><li>Towels &amp; Linens</li><li>Grill/BBQ <em> Charcoal</em></li><li>Deck</li><li>Skiing <em> Walk to Ski</em></li><li>Tennis</li><li>Style <em> Home</em></li><li>View <em> Forest</em></li></ul></div>
+                </div>
+                <!--  availability -->
+                <div
+                  class="tab-pane fade"
+                  id="pills-availability"
+                  role="tabpanel"
+                  aria-labelledby="availability-tab"
+                >
+                <!-- <input type="text" id="alternate" size="30"> -->
+                  <div id="calender" class="calender"></div>
+                </div>
+
+                <!-- location -->
+                <div
+                  class="tab-pane fade"
+                  id="pills-location"
+                  role="tabpanel"
+                  aria-labelledby="location-tab"
+                >
+                <div class="map-wrapper">
+                  <div class="map-direction d-grid col-md-2 col-5 mx-auto mb-3">
+                    <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;&daddr=1056+Clubview+Dr. Big+Bear+Lake CA&saddr=Current Location" target="_blank" class="btn btn-outline-dark rounded-0" >Get Directions</a>
+                  </div>
+                  <div id="map-detail"></div>
+                </div>
+                </div>
+                <!-- reviews -->
+                <div
+                  class="tab-pane fade"
+                  id="pills-reviews"
+                  role="tabpanel"
+                  aria-labelledby="reviews-tab"
+                >
+                  <div class="star-rating position-relative d-flex align-items-center gap-2 mb-4">
+                    <div class="rating-title">
+                      <p class="m-0">Average Rating</p>
+                    </div>
+                    <div class="back-stars position-relative d-flex">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <div class="front-stars position-absolute d-flex overflow-hidden w-75">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="review-wrapper">
+                    <div class="review-body">
+                      <h3 class="review-title mb-3">"GREAT EXPERIENCE "</h3>
+                      <div class="star-rating d-flex">
+                        <div class="back-stars position-relative d-flex fs-6">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <div class="front-stars position-absolute d-flex overflow-hidden w-50">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <p>It was a great experience can’t wait to go back awesome cabin</p>
+                      <p class="text-end">-Big Bear Cool Cabins Guest on 03/16/2021</p>
+                    </div>
+                    <div class="review-body">
+                      <h3 class="review-title mb-3">"AWESOME CABIN AND SERVICE "</h3>
+                      <div class="star-rating d-flex">
+                        <div class="back-stars position-relative d-flex fs-6">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <div class="front-stars position-absolute d-flex overflow-hidden w-100">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <p>I've stayed in the same cabin a half dozen times and in several other cabins y'all manage over the past 15 years and they are always perfect cozy and clean. As your company and selection have grown so has your excellent service. Proud to be a loyal Cool Cabins client.</p>
+                      <p class="text-end">-Big Bear Cool Cabins Guest on 03/16/2021</p>
+                    </div>
+                    <div class="review-body">
+                      <h3 class="review-title mb-3">"GREAT GETAWAY FOR A FAMILY WEEKEND!"</h3>
+                      <div class="star-rating d-flex">
+                        <div class="back-stars position-relative d-flex fs-6">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <div class="front-stars position-absolute d-flex overflow-hidden w-75">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <p>Great getaway for a family weekend. The cabin was perfect!</p>
+                      <p class="text-end">-Big Bear Cool Cabins Guest on 03/16/2021</p>
+                    </div>
+                    <div class="review-modal">
+                      <button type="button" class="btn bg-btn rounded-0 text-uppercase" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Leave reviews</button>
+                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                          <div class="modal-content rounded-0 p-3">
+                            <!-- <div class="modal-header justify-content-end">
+                            </div> -->
+                            <div class="modal-body pb-5">
+                              <button type="button" class="btn-close position-absolute top-0 end-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                              <h4>Leave a Review for Comfy Cubby</h4>
+                              <form>
+                                <div class="group-control">
+                                  <label for="txt-title">Title *</label>
+                                  <input type="text" class="form-control bg-light rounded-0 text-secondary" id="txt-title" name="txt-title">
+                                </div>
+                                <div class="group-control">
+                                  <label for="review-property" class="text-dark">Reviewed Property *</label>
+                                  <select class="form-select rounded-0 bg-light text-secondary" name="review-property" id="review-property" aria-label="Items per Page">
+                                      <option selected>-Select a Value-</option>
+                                      <option value="3 little bears cabin">3 Little Bears Cabin</option>
+                                      <option value="a-beary-happy-cabin">A Beary Happy Cabin</option>
+                                      <option value="a-hidden-assets">A Hidden Assets</option>
+                                      <option value="acron-cottage">Acron Cottage</option>
+                                      <option value="bear-paz-cabin">Bear Paz Cabin</option>
+                                  </select>
+                                </div>
+                                <div class="group-control">
+                                  <label for="ration" class="text-dark">Rating *</label>
+                                  <select class="form-select rounded-0 bg-light text-secondary" name="ration" id="ration" aria-label="Items per Page">
+                                      <option selected>-Select a Value-</option>
+                                      <option value="20">1 Star</option>
+                                      <option value="40">2 Star</option>
+                                      <option value="60">3 Star</option>
+                                      <option value="80">4 Star</option>
+                                      <option value="100">5 Star</option>
+                                  </select>
+                                </div>
+                                <div class="group-control">
+                                  <label for="txt-review" >Your Review *</label>
+                                  <textarea class="form-control bg-light rounded-0 text-secondary" id="txt-review" name="txt-review"></textarea>
+                                </div>
+                                <div class="group-control">
+                                  <label for="name" >Your Name *</label>
+                                  <input type="text" class="form-control bg-light rounded-0 text-secondary" id="name" name="name">
+                                  <p class="message">Please add your name or appellation (e.g. "The Brown Family") here.</p>
+                                </div>
+
+                                <button type="submit" class="btn bg-btn rounded-0 text-uppercase">Submit Your Review</button>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- footer -->
+
+    <footer class="footer py-4" >
+      <div class="container">
+        <div class="social-items d-flex mb-5 ">
+            <div class="socical-links facebook">
+              <a href="#" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </div>
+            <div class="socical-links instagram">
+              <a href="#" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+            <div class="socical-links twitter">
+              <a href="#" target="_blank">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </div>
+            <div class="socical-links youtube">
+              <a href="#" target="_blank">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </div>
+            <div class="socical-links yelp">
+              <a href="#" target="_blank">
+                <i class="fa-brands fa-yelp"></i>
+              </a>
+            </div>
+            <div class="socical-links pinterest">
+              <a href="#">
+                <i class="fa-brands fa-pinterest-p"></i>
+              </a>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-sm-6 mb-4">
+              <div class="footer-content">
+                <h4 class="text-color fm-sans fw-bold text-uppercase">Things to Do</h4>
+                <ul class="list-group">
+                  <li class="group-item text-color"><strong>Big Bear Cool Cabins</strong></li>
+                  <li class="group-item">40375 Big Bear Blvd.</li>
+                  <li class="group-item">Big Bear Lake, CA 92315</li>
+                  <li class="group-item">Info@BigBearCoolCabins.com</li>
+                  <li class="group-item">Phone: 909-866-7374</li>
+                  <li class="group-item">Espanol:  909-217-3144</li>
+                  <li class="group-item">Text: 909-219-9681</li>
+                  <li class="group-item">Fax: 909-866-9808</li>
+                  <li class="group-item text-color"><strong>Mailing Address</strong></li>
+                  <li class="group-item">PO Box 1655</li>
+                  <li class="group-item">Big Bear Lake, CA 92315</li>
+                  <li class="group-item text-color"><strong>Company Hours</strong></li>
+                  <li class="group-item">Office:  Sun-Thur 8am-8pm, Fri 8am-</li>
+                  <li class="group-item">10pm, Sat 8am-9pm</li>
+                  <li class="group-item">Business: 24/7 at 800-550-8779</li>
+                </ul>
+              </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="footer-content">
+              <h4 class="text-color fm-sans fw-bold text-uppercase">QUICK LINKS</h4>
+              <ul class="list-group">
+                <li class="group-item"><a href="#" class="text-dark">Home</a></li>
+                <li class="group-item"><a href="#" class="text-dark" target="_blank">Find My Reservation</a></li>
+                <li class="group-item"><a href="#" class="text-dark" target="_blank">Owner Portal</a></li>
+                <li class="group-item"><a href="#" class="text-dark" target="_blank">About Us</a></li>
+                <li class="group-item"><a href="#" class="text-dark" target="_blank">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="footer-content">
+              <h4 class="text-color fm-sans fw-bold text-uppercase">WEATHER</h4>
+              <ul class="list-group">
+                <li class="group-item"><a href="#" class="text-dark" target="_blank">Click here for weather!</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="footer-content">
+              <h4 class="text-color fm-sans fw-bold text-uppercase">Things to Do</h4>
+              <form action="">
+                <select class="form-select p-1" aria-label="select property name">
+                  <option selected>--Choose--</option>
+                  <option value="1">3 Culb Lakefront Cabin</option>
+                  <option value="2">3 Little Bears Cabin</option>
+                  <option value="3">5 Kern's Cabin</option>
+                  <option value="3">A Beary Happy Cabin</option>
+                  <option value="3">A Hidden Asset</option>
+                  <option value="3">A Humble Hilltop Hideaway</option>
+                  <option value="3">A Stones Throw</option>
+                </select>
+              </form>
+            </div>
+            <div class="proud-members mt-5">
+              <h4 class="text-color fm-sans fw-bold text-uppercase">PROUD MEMBERS OF</h4>
+              <div class="brands">
+                <img src="./assets/images/brands/1.png" alt="">
+                <img src="./assets/images/brands/2.png" alt="">
+                <img src="./assets/images/brands/3.png" alt="">
+                <img src="./assets/images/brands/4.png" alt="">
+                <img src="./assets/images/brands/5.jpg" alt="">
+                <img src="./assets/images/brands/6.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-md-6 text-lg-start text-center">
+           <p class="fm-sans"> © 2022 Big Bear Cool Cabins All rights reserved.</p>
+          </div>
+          <div class="col-md-6 text-lg-end text-center">
+            <p class="fm-sans">Powered by rezFusion. Built by Bluetent</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var main = new Splide("#main-slider", {
+          type: "slide",
+          speed: 1000,
+          perPage: 1,
+          heightRatio: 0.5,
+          pagination: false,
+          arrows: true,
+          cover: true,
+        });
+
+        var thumbnails = new Splide("#thumbnail-slider", {
+          rewind: true,
+          fixedWidth: 96,
+          fixedHeight: 72,
+          isNavigation: true,
+          gap: 3,
+          focus: "center",
+          autoplay: false,
+          pagination: false,
+          cover: true,
+          dragMinThreshold: {
+            mouse: 4,
+            touch: 10,
+          },
+          // breakpoints : {
+          //   640: {
+          //     fixedWidth  : 66,
+          //     fixedHeight : 38,
+          //   },
+          // },
+        });
+
+        main.sync(thumbnails);
+        main.mount();
+        thumbnails.mount();
+      });
+    </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" src="./assets/js/datePicker.js"></script>
+<script>
+  $( function() {
+    $( "#calender" ).datepicker({
+      numberOfMonths: 8,
+      // altField: "#alternate",
+      // altFormat: "MM, yy"
+    });
+  } );
+</script>
+<script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+      defer
+    ></script>
+    <!-- map -->
+    <script>
+      function initMap() {
+    let map = new google.maps.Map(document.getElementById("map-detail"), {
+        zoom: 16,
+        center: {lat: 34.266698945483796, lng: -116.78164050284762 },
+        mapTypeId: 'satellite',
+        labels : true
+    });
+
+    let contentString = `<div class="map-card" style="width:310px; height: 468px;">
+    <div class="map-card-heading">
+      <p class="m-0">Goldies Getaway</p>
+    </div>
+    <div class="row mb-2 w-100">
+      <div class="col-6">
+        <div class="card-img position-relative">
+        <a href="#" class="favorites position-absolute top-0 " ><i class="fa-regular fa-heart"></i></a>
+          <img src="./assets/images/booking/1.jpg" style="width:100%; height:auto;" alt="card-image" />
+          <p>Hot Tub</p>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="map-card-btn">
+          <a href="./detail-page.html" class="btn mb-2">View Detail</a>
+          <a href="./detail-page.html" class="btn">Get Directions</a>
+        </div>
+        <div class="features">
+          <p class="m-0">3 Bedrooms</p>
+          <p class="m-0">2 Baths</p>
+          <p class="m-0">Price: $221</p>
+        </div>
+      </div>
+    </div>
+    <div class="booking-btn">
+      <a href="./booking-form.html" class="btn bg-btn rounded-0">Book Now</a>
+    </div>
+    <div class="item-list"><h3>Available Package Components</h3><ul class="amenities"><li class="item">Saturday Oktoberfest Entry</li>
+        <li class="item">Sunday Oktoberfest Entry</li>
+        <li class="item">Cozy Night Firewood Package</li>
+        <li class="item">Food Stock</li>
+        <li class="item">Large Firewood </li>
+        <li class="item">Flowers - Mixed Arrangements</li>
+        <li class="item">Breakfast Package</li>
+        <li class="item">A Dozen Roses</li>
+        <li class="item">Fresh Fruit Basket</li>
+        </ul>
+    </div>
+    <div class="addon-buttons"><a href="#" class="select-package">Select Package Components »</a><br><a href="./booking-form.html" class="book-lodging-only">Book Lodging Only »</a></div>
+  </div>`;
+
+    let infowindow = new google.maps.InfoWindow({
+        content: contentString,
+    });
+    
+    let marker = new google.maps.Marker({
+        position:{lat: 34.266698945483796, lng: -116.78164050284762 },
+        map: map,
+        title: "Uluru (Ayers Rock)",
+    });
+    marker.addListener("click", function () {
+        infowindow.open({
+            anchor: marker,
+            map: map,
+            shouldFocus: false,
+        });
+    });
+};
+window.initMap = initMap;
+</script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

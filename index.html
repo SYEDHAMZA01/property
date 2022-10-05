@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Las Vegas Vacation Rental By Owners</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/nav.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css" integrity="sha512-ELV+xyi8IhEApPS/pSj66+Jiw+sOT1Mqkzlh8ExXihe4zfqbWkxPRi8wptXIO9g73FSlhmquFlUOuMSoXz5IRw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/themes/splide-sea-green.min.css">  -->
+  </head>
+  <body>
+    <header id="header" class="header">
+      <nav class="navbar navbar-expand-lg navbar-light position-absolute w-100">
+        <div class="container-lg">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./assets/images/output-onlinepngtools.png"
+              class="img-fluid"
+              alt=""
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse flex-column align-items-end"
+            id="navbarSupportedContent"
+          >
+            <div>
+              <a href="#" class="las-btn me-2 text-uppercase"
+                ><i class="fa-solid fa-envelope me-1"></i> Sign up for Specials
+                and News</a
+              >
+              <a href="#" class="las-btn text-uppercase"
+                ><i class="fa-solid fa-heart me-1"></i> My Favorites</a
+              >
+            </div>
+
+            <div class="phone-number">
+              <a href="#">800-500-8779</a>
+            </div>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Our Cool Cabins
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Our Cool Cabins</a></li>
+                  <li><a class="dropdown-item" href="#">Big Bear Cabins</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Big Bear Lakefronts</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Big Bear Pet Friendly Cabins</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Big Bear Hot Tub Cabins</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Game Table Cabins</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Monthly Rentals</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Deals
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Deals</a></li>
+                  <li><a class="dropdown-item" href="#">Specials</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Exclusive Oktoberfest Packages</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Discover Big Bear
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">Discover Big Bear</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Things to Do</a></li>
+                  <li><a class="dropdown-item" href="#">Events</a></li>
+                  <li><a class="dropdown-item" href="#">Visitor Guide </a></li>
+                  <li><a class="dropdown-item" href="#">Blog</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Vacation Homes For Sale</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                  <li><a class="dropdown-item" href="#">Join Our Team!</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Guest Services
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Guest Services</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Gift Certificates</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Reservation Add-Ons </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Red Sky Travel Insurance</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Find My Reservation</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">What To Pack</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Cool Cabins Pet Friendly Info</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Dog Friendly Restaurants</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="#">FAQs</a></li>
+                  <li><a class="dropdown-item" href="#">Winter Guide</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Customer Feedback</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Owners
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Owners</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Property Management</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Owner Portal Login </a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">About Us</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Why Use A Vacation Rental Manager</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Cool Cabins Cares!</a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section class="splide p-0" id="slider1" aria-label="header Slide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img
+                src="https://media.istockphoto.com/photos/residential-housing-background-picture-id1192403701?b=1&k=20&m=1192403701&s=170667a&w=0&h=xW5NNn1lyKmcAgan7JQttS-DYilFNGt4DS-IxxNgYQg="
+                class="w-100 img-fluid h-100"
+                alt=""
+              />
+            </li>
+            <li class="splide__slide">
+              <img
+                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvcGVydHl8ZW58MHx8MHx8&w=1000&q=80"
+                class="w-100 img-fluid h-100"
+                alt=""
+              />
+            </li>
+            <li class="splide__slide">
+              <img
+                src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                class="w-100 img-fluid h-100"
+                alt=""
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+      
+
+      <section id="search-bar">
+          <div class="container">
+            <div class="hero-heading">
+                <h2 class="text-center">Great Vacations Start Here</h2>
+            </div>
+            <div class="search-bar p-3 pb-0">
+              <form action="./big-bear-cabin-rentals.html" autocomplete="off">
+                <div class="row">
+                  <div class="col-md-3 col-sm-6 mb-3">
+                      <input
+                      type="text"
+                       id="arrival"
+                      name="arrival"
+                      class="form-control rounded-0"
+                    />
+                  </div>
+                  <div class="col-md-3 col-sm-6 mb-3">
+                    <input
+                      type="text"
+                      name="departure"
+                      id="departure"
+                      class="form-control rounded-0"
+                    />
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <select class="form-select rounded-0" aria-label="Default select example">
+                      <option selected>Number Of Guest</option>
+                      <option value="1">Number Of Guest: 1</option>
+                      <option value="2">Number Of Guest: 2</option>
+                      <option value="3">Number Of Guest: 3</option>
+                      <option value="4">Number Of Guest: 4</option>
+                      <option value="5">Number Of Guest: 5</option>
+                      <option value="6">Number Of Guest: 6</option>
+                      <option value="7">Number Of Guest: 7</option>
+                      <option value="8">Number Of Guest: 8</option>
+                      <option value="9">Number Of Guest: 9</option>
+                      <option value="10">Number Of Guest: 10</option>
+                    </select>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <button type="submit" class="btn bg-btn rounded-0 w-100">Submit</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+      </section>
+    </header>
+
+    <!--1st section start -->
+
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 p-0">
+            <div class="las-vegas-cards d-flex align-items-stretch pt-4">
+              <div class="las-vegas-card">
+                <a href="#">
+                  <div class="card-heading">
+                    <h4 class="m-0 fm-sans">Lakefront Cabins</h3>
+                  </div>
+                </a>
+                <div class="card-image">
+                  <img
+                    src="./assets/images/extended_stay.png"
+                    class="img-fluid w-100"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="las-vegas-card">
+                <a href="#">
+                  <div class="card-heading">
+                    <h4 class="m-0 fm-sans">Pet Friendly Cabins</h3>
+                  </div>
+                </a>
+                <div class="card-image">
+                  <img
+                    src="./assets/images/dog2.png"
+                    class="img-fluid w-100"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="las-vegas-card">
+                <a href="#">
+                  <div class="card-heading">
+                    <h4 class="m-0 fm-sans">Hot Tub Cabins</h4>
+                  </div>
+                </a>
+                <div class="card-image">
+                  <img
+                    src="./assets/images/game_room.jpg"
+                    class="img-fluid w-100"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="las-vegas-card">
+                <a href="#">
+                  <div class="card-heading">
+                    <h4 class="m-0 fm-sans">Monthly Rentals</h3>
+                  </div>
+                </a>
+                <div class="card-image">
+                  <img
+                    src="./assets/images/hot_tub.jpg"
+                    class="img-fluid w-100"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="las-vegas-card">
+                <a href="#">
+                  <div class="card-heading">
+                    <h4 class="m-0 fm-sans">Lakefront Cabins</h3>
+                  </div>
+                </a>
+                <div class="card-image">
+                  <img
+                    src="./assets/images/hot_tub.jpg"
+                    class="img-fluid w-100"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2nd section start -->
+
+    <section class="group-content pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 pt-5 text-center">
+          <blockquote>
+            <h2 class="main-heading">
+              Big Bear Cool Cabins Vacation Rentals
+            </h2>   
+          </blockquote>
+          <h4 class="mb-4">
+            <a href="#">Cool Cabins Donates for Every Booking!</a>
+          </h4>
+          <h4 class="mb-4">
+            $30,150 Raised to Date!!
+          </h4>
+          <p class="fw-bold text-start fm-sans">
+            Big Bear Cool Cabins invites you to be our guest in the breathtaking mountains of Southern California. Big Bear Lake is a year-round resort with a beautiful lake for boating and fishing in the summer and the best slopes in Southern California for skiing and snowboarding in the winter. Come escape to Big Bear with its mild summer temperatures and snowy winters.  The San Bernardino National Forest is a beautiful area for hiking, biking, and horseback riding. We have a quaint Village full of shops and restaurants, an Big Bear Alpine Zoo, Bear Mountain Golf Course, and much, much more.
+          </p>
+          <p class="fw-bold text-start fm-sans mb-4">
+            Just a two hour drive from Los Angeles or Orange County and three hours from San Diego or Las Vegas, Big Bear Lake is the perfect vacation destination.  Rent a cabin on the lake, near the slopes, or next to the hiking trails.  Big Bear Cool Cabins has the perfect vacation rental for you. We even have pet friendly cabins available for your four-legged family members as well.  We look forward to hosting you soon! 
+          </p>
+          <h4>Check out our exclusive Oktoberfest Packages <span class="fw-bold">HERE</span> </h4>
+        <h2 class="main-heading mt-4">Winner of the <strong>Best Big Bear Vacation Rental</strong> Company  for the last five years! </h2>    
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3rd section Property cards -->
+
+    <section class="property-cards py-5">
+        <div class="container">
+          <div class="row">
+            <div><h2 class="text-center main-heading">Featured Rentals</h2></div>
+            <div class="col-md-4 mb-4">
+              <div class="card rounded-0">
+                <div class="card-img">
+                  <a href="#" class="favorites"><i class="fa-regular fa-heart"></i></a>
+                <a href="./detail-page.html">
+                <img src="./assets/images/property_cards/1.jpg" class="img-fluid" alt="...">
+              </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <a href="./detail-page.html" class="text-color"> Peter Pan Lodge</a></h5>
+                  <p class="card-text fw-bold">
+                    <span class="pe-2 border-end border-dark">3 Bedrooms</span>  
+                    <span class="px-2">2 Bathroom</span>  
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card rounded-0">
+                <div class="card-img">
+                  <a href="#" class="favorites"><i class="fa-regular fa-heart"></i></a>
+                <img src="./assets/images/property_cards/2.jpg" class="img-fluid" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <a href="#" class="text-color"> The Great Escape</a></h5>
+                  <p class="card-text fw-bold">
+                    <span class="pe-2 border-end border-dark">3 Bedrooms</span>  
+                    <span class="px-2">1 Bathroom</span>  
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card rounded-0">
+                <div class="card-img">
+                  <a href="#" class="favorites"><i class="fa-regular fa-heart"></i></a>
+                <img src="./assets/images/property_cards/3.jpg" class="img-fluid" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <a href="#" class="text-color"> Parkside Cottage</a></h5>
+                    <p class="card-text fw-bold">
+                      <span class="pe-2 border-end border-dark">2 Bedrooms</span>  
+                      <span class="px-2">2 Bathroom</span>  
+                    </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- 4th section rating -->
+
+    <section class="rating-section">
+      <div class="container-fluid p-2">
+        <div class="row w-100">
+          <div class="col-md-2">
+            <div class="rating-excellent text-center">
+              <h2>Excelent</h2>
+              <div class="rating d-flex justify-content-center">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="mt-2">Based on <a href="#">6,445 reviews </a></p>
+              <h2><i class="fa-solid fa-star"></i> Trustpilot</h2>
+            </div>
+          </div>
+          <div class="col-md-10">
+            <section class="splide p-0" id="slider2" aria-label="header Slide">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <div class="rating-excellent">
+                      <div class="rating d-flex">
+                        <span class="me-2"><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </span>
+                        <span><i class="fa-solid fa-circle-check"></i> Verified</span>
+                      </div>
+                      <h5 class="mt-2">Wenderful cabin</h5>
+                      <p class="mb-1">We had an amazing stay at Cozy Red Cabin.It war very comfortable and we...</p>
+                      <p class="mb-1">Gosh G, 3 days ago</p>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="rating-excellent">
+                      <div class="rating d-flex">
+                        <span class="me-2"><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </span>
+                        <span><i class="fa-solid fa-circle-check"></i> Verified</span>
+                      </div>
+                      <h5 class="mt-2">Wenderful cabin</h5>
+                      <p class="mb-1">We had an amazing stay at Cozy Red Cabin.It war very comfortable and we...</p>
+                      <p class="mb-1">Gosh G, 3 days ago</p>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="rating-excellent">
+                      <div class="rating d-flex">
+                        <span class="me-2"><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </span>
+                        <span><i class="fa-solid fa-circle-check"></i> Verified</span>
+                      </div>
+                      <h5 class="mt-2">Wenderful cabin</h5>
+                      <p class="mb-1">We had an amazing stay at Cozy Red Cabin.It war very comfortable and we...</p>
+                      <p class="mb-1">Gosh G, 3 days ago</p>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="rating-excellent">
+                      <div class="rating d-flex">
+                        <span class="me-2"><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </span>
+                        <span><i class="fa-solid fa-circle-check"></i> Verified</span>
+                      </div>
+                      <h5 class="mt-2">Wenderful cabin</h5>
+                      <p class="mb-1">We had an amazing stay at Cozy Red Cabin.It war very comfortable and we...</p>
+                      <p class="mb-1">Gosh G, 3 days ago</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <p>Showing our 4 & 5 star reviews</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5th section triptych -->
+
+    <section class="triptych py-5">
+        <div class="container-md">
+          <div class="row">
+            <div class="col-md-4">
+                <h4 class="text-color fm-sans fw-bold ms-2">Things to Do</h4>
+                <article class="view-content">
+                      <div class="triptych-img">
+                        <img src="./assets/images/triptych/1.jpg" width="220" height="170" class="img-fluid" alt="">
+                      </div>
+                    <div class="triptych-content">
+                      <h5 class="mt-2"><a href="#" class="text-color fm-sans fst-normal">Go Kart Racing </a></h5>
+                      <p class="fm-sans">The wildly-popular kart racing is now in Big Bear Lake! Thrill seekers can now drive SODI RT8 Karts and compete against the clock while reaching speeds of up to 30 mph at the new Big Bear Speedway.</p>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-4">
+              
+              <h4 class="text-color fm-sans fw-bold ms-2">Blog</h4>
+              <article class="mt-3 d-flex align-items-start">
+                <img src="./assets/images/triptych/2.png" class="img-fluid me-3" alt="">
+                <div class="">
+                  <h5 class="mt-2"><a href="#" class="text-color fm-sans fst-normal">Oktoberfest is Almost Here!</a></h5>
+                  <p class="fm-sans">Are you ready for the 52nd annual celebration of German tradition that...</p>
+                </div>
+              </article>
+
+              <article class="mt-3 d-flex align-items-start">
+                <img src="./assets/images/triptych/3.jpg" class="img-fluid me-3" alt="">
+                <div class="">
+                  <h5 class="mt-2"><a href="#" class="text-color fm-sans fst-normal">Thank You For Your Service!!</a></h5>
+                  <p class="fm-sans">Big Bear Cool Cabins appreciates our service men and women! Thank you...</p>
+                </div>
+              </article>
+
+              <article class="mt-3 d-flex align-items-start">
+                <img src="./assets/images/triptych/4.jpg" class="img-fluid me-3" alt="">
+                <div class="">
+                  <h5 class="mt-2"><a href="#" class="text-color fm-sans fst-normal">Cool Run in the Mountains</a></h5>
+                  <p class="fm-sans">Join us this Labor Day weekend for the Cool Run in the...</p>
+                </div>
+              </article>
+              
+            </div>
+            <div class="col-md-4">
+              
+              <h4 class="text-color fm-sans fw-bold ms-2">Events</h4>
+              <article class="mt-3 d-flex align-items-start">
+                <img src="./assets/images/triptych/5.jpg" class="img-fluid me-3" alt="">
+                <div class="">
+                  <h5 class="mt-2"><a href="#" class="text-color fm-sans fst-normal">Tuesdays Farmer's Market</a></h5>
+                  <p class="fm-sans">08/16/2022 - 8:30am
+                    Shop Local! Big Bear Valley Farmer’s Market at the Big Bear Convention Center
+                    (Every Tuesday, April through September). 8:30 a.m. to 1:00 p.m</p>
+                </div>
+              </article>
+
+              <article class="mt-3 d-flex align-items-start">
+                <img src="./assets/images/triptych/6.jpg" class="img-fluid me-3" alt="">
+                <div class="">
+                  <h5 class="mt-2"><a href="#" class="text-color fm-sans fst-normal">CalTri Big Bear</a></h5>
+                  <p class="fm-sans">08/28/2022 - 8:00am
+                    Calling all athletes, challenge seekers, and outdoor recreationalists! Cal Tri is heading...</p>
+                </div>
+              </article>
+
+              <article class="mt-3 d-flex align-items-start">
+                <img src="./assets/images/triptych/7.jpg" class="img-fluid me-3" alt="">
+                <div class="">
+                  <h5 class="mt-2"><a href="#" class="text-color fm-sans fst-normal">Cool Run in the Mountains</a></h5>
+                  <p class="fm-sans">09/03/2022 - 10:00am
+                    The Cool Run Car Show features 100+ unique and classic cars, vendors,...</p>
+                </div>
+              </article>
+
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer class="footer py-4" >
+      <div class="container">
+        <div class="social-items d-flex mb-5 ">
+            <div class="socical-links facebook">
+              <a href="#" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </div>
+            <div class="socical-links instagram">
+              <a href="#" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+            <div class="socical-links twitter">
+              <a href="#" target="_blank">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </div>
+            <div class="socical-links youtube">
+              <a href="#" target="_blank">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </div>
+            <div class="socical-links yelp">
+              <a href="#" target="_blank">
+                <i class="fa-brands fa-yelp"></i>
+              </a>
+            </div>
+            <div class="socical-links pinterest">
+              <a href="#">
+                <i class="fa-brands fa-pinterest-p"></i>
+              </a>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-sm-6 mb-4">
+              <div class="footer-content">
+                <h4 class="text-color fm-sans fw-bold text-uppercase">Things to Do</h4>
+                <ul class="list-group">
+                  <li class="group-item text-color"><strong>Big Bear Cool Cabins</strong></li>
+                  <li class="group-item">40375 Big Bear Blvd.</li>
+                  <li class="group-item">Big Bear Lake, CA 92315</li>
+                  <li class="group-item">Info@BigBearCoolCabins.com</li>
+                  <li class="group-item">Phone: 909-866-7374</li>
+                  <li class="group-item">Espanol:  909-217-3144</li>
+                  <li class="group-item">Text: 909-219-9681</li>
+                  <li class="group-item">Fax: 909-866-9808</li>
+                  <li class="group-item text-color"><strong>Mailing Address</strong></li>
+                  <li class="group-item">PO Box 1655</li>
+                  <li class="group-item">Big Bear Lake, CA 92315</li>
+                  <li class="group-item text-color"><strong>Company Hours</strong></li>
+                  <li class="group-item">Office:  Sun-Thur 8am-8pm, Fri 8am-</li>
+                  <li class="group-item">10pm, Sat 8am-9pm</li>
+                  <li class="group-item">Business: 24/7 at 800-550-8779</li>
+                </ul>
+              </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="footer-content">
+              <h4 class="text-color fm-sans fw-bold text-uppercase">QUICK LINKS</h4>
+              <ul class="list-group">
+                <li class="group-item"><a href="#" class="text-dark">Home</a></li>
+                <li class="group-item"><a href="#" class="text-dark" target="_blank">Find My Reservation</a></li>
+                <li class="group-item"><a href="#" class="text-dark" target="_blank">Owner Portal</a></li>
+                <li class="group-item"><a href="#" class="text-dark" target="_blank">About Us</a></li>
+                <li class="group-item"><a href="#" class="text-dark" target="_blank">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="footer-content">
+              <h4 class="text-color fm-sans fw-bold text-uppercase">WEATHER</h4>
+              <ul class="list-group">
+                <li class="group-item"><a href="#" class="text-dark" target="_blank">Click here for weather!</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="footer-content">
+              <h4 class="text-color fm-sans fw-bold text-uppercase">Things to Do</h4>
+              <form action="">
+                <select class="form-select p-1" aria-label="select property name">
+                  <option selected>--Choose--</option>
+                  <option value="1">3 Culb Lakefront Cabin</option>
+                  <option value="2">3 Little Bears Cabin</option>
+                  <option value="3">5 Kern's Cabin</option>
+                  <option value="3">A Beary Happy Cabin</option>
+                  <option value="3">A Hidden Asset</option>
+                  <option value="3">A Humble Hilltop Hideaway</option>
+                  <option value="3">A Stones Throw</option>
+                </select>
+              </form>
+            </div>
+            <div class="proud-members mt-5">
+              <h4 class="text-color fm-sans fw-bold text-uppercase">PROUD MEMBERS OF</h4>
+              <div class="brands">
+                <img src="./assets/images/brands/1.png" alt="">
+                <img src="./assets/images/brands/2.png" alt="">
+                <img src="./assets/images/brands/3.png" alt="">
+                <img src="./assets/images/brands/4.png" alt="">
+                <img src="./assets/images/brands/5.jpg" alt="">
+                <img src="./assets/images/brands/6.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-md-6 text-lg-start text-center">
+           <p class="fm-sans"> © 2022 Big Bear Cool Cabins All rights reserved.</p>
+          </div>
+          <div class="col-md-6 text-lg-end text-center">
+            <p class="fm-sans">Powered by rezFusion. Built by Bluetent</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
+    <script>
+      
+      new Splide("#slider1", {
+        animateIn: 'fadeIn',
+        // type: "loop",
+        type: "fade",
+        rewind     : true,
+        rewindSpeed: 5000,
+        speed:3000,
+        autoplay: true,
+        pagination: false,
+        height: "45rem",
+      }).mount();
+
+    </script>
+    <script>
+      new Splide( '#slider2', {
+          perPage:4,
+          gap   : 10,
+          padding: '4rem',
+          page:3,
+          pagination : false,
+          breakpoints: {
+            992: {
+              perPage: 2,
+              padding: '1rem',
+              gap    : 10,
+            },
+            480: {
+              perPage: 1,
+              padding: '1rem',
+              gap    : 10,
+            },
+          },
+      } ).mount();
+    </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="text/javascript" src="./assets/js/datePicker.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

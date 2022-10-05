@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking</title>
+    <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/booking-style.css" />
+    <link rel="stylesheet" href="./assets/css/nav.css">
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-lg">
+          <a class="navbar-brand" href="./index.html">
+            <img
+              src="./assets/images/output-onlinepngtools.png"
+              class="img-fluid"
+              alt=""
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse flex-column align-items-end"
+            id="navbarSupportedContent"
+          >
+            <div>
+              <a href="#" class="las-btn me-2 text-uppercase"
+                ><i class="fa-solid fa-envelope me-1"></i> Sign up for Specials
+                and News</a
+              >
+              <a href="#" class="las-btn text-uppercase"
+                ><i class="fa-solid fa-heart me-1"></i> My Favorites</a
+              >
+            </div>
+
+            <div class="phone-number">
+              <a href="#">800-500-8779</a>
+            </div>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Our Cool Cabins
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Our Cool Cabins</a></li>
+                  <li><a class="dropdown-item" href="#">Big Bear Cabins</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Big Bear Lakefronts</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Big Bear Pet Friendly Cabins</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Big Bear Hot Tub Cabins</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Game Table Cabins</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Monthly Rentals</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Deals
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Deals</a></li>
+                  <li><a class="dropdown-item" href="#">Specials</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Exclusive Oktoberfest Packages</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Discover Big Bear
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">Discover Big Bear</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Things to Do</a></li>
+                  <li><a class="dropdown-item" href="#">Events</a></li>
+                  <li><a class="dropdown-item" href="#">Visitor Guide </a></li>
+                  <li><a class="dropdown-item" href="#">Blog</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Vacation Homes For Sale</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                  <li><a class="dropdown-item" href="#">Join Our Team!</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Guest Services
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Guest Services</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Gift Certificates</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Reservation Add-Ons </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Red Sky Travel Insurance</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Find My Reservation</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">What To Pack</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Cool Cabins Pet Friendly Info</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Dog Friendly Restaurants</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="#">FAQs</a></li>
+                  <li><a class="dropdown-item" href="#">Winter Guide</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Customer Feedback</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Owners
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Owners</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Property Management</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Owner Portal Login </a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">About Us</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Why Use A Vacation Rental Manager</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Cool Cabins Cares!</a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                  </li> -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- section -->
+
+    <section>
+      <div class="container-lg">
+        <div class="row g-0">
+          <div class="col-md-12 mt-5">
+            <h1 class="text-uppercase fw-bold main-heading">
+              STEP 1: RESERVATION DETAILS
+            </h1>
+          </div>
+          <div class="col-md-8 booking-card-left">
+            <div class="card border-0 rounded-0">
+              <div class="row g-0 p-md-3 bg-mute">
+                <div class="col-md-5 col-sm-6 col-6">
+                  <img
+                    src="./assets/images/booking/1.jpg"
+                    class="img-fluid"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-7 col-sm-6 col-6">
+                  <div class="card-body py-sm-2">
+                    <h3 class="card-title">PARADISE PEAK</h3>
+                    <p class="card-text">
+                      <span class="pe-2 border-end border-dark"
+                        >3 Bedrooms</span
+                      >
+                      <span class="px-2">2 Bathroom</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 booking-card-right position-relative p-3">
+            <div class="booking-content">
+              <h5> TUE AUG 30 - THU SEP 1, 2022</h5>
+              <h5>$464.00 + TAXES AND FEES</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container-lg">
+        <form>
+          <div class="row my-5">
+            <div class="col-md-6">
+              <fieldset class="form-wrapper" id="edit-charges">
+                <legend class="text-center bg-gray">
+                  <span class="fieldset-legend"
+                    >SPECIFY GUESTS: PARADISE PEAK</span
+                  >
+                </legend>
+                <div class="fieldset-wrapper p-3">
+                  <div class="fieldset-description">Maximum occupancy is 6</div>
+                  <div class="row">
+                    <div class="col-6 mt-2">
+                      <label for="adults">Adults</label>
+                      <select
+                        class="form-select rounded-0 text-secondary"
+                        aria-label="Default select Adults"
+                      >
+                        <option selected>Select Adults</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select>
+                    </div>
+                    <div class="col-6 mt-2">
+                      <label for="children">Children</label>
+                      <select
+                        class="form-select rounded-0 text-secondary"
+                        aria-label="Default select children"
+                      >
+                        <option selected>Select Children</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select>
+                      <small class="description">Age 17 and under.</small>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset class="form-wrapper mt-md-3" id="edit-charges">
+                <legend class="text-center bg-gray">
+                  <span class="fieldset-legend">PROMO CODE</span>
+                </legend>
+                <div class="fieldset-wrapper p-3">
+                  <div class="row g-2">
+                    <div class="col-7 mt-2">
+                      <div>
+                        <input
+                          type="text"
+                          class="form-control rounded-0"
+                          id="promo"
+                          aria-describedby="promo"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-5 mt-2">
+                      <button type="submit" class="btn bg-btn w-100 rounded-0">
+                        Apply
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset class="form-wrapper mt-md-3" id="edit-charges">
+                <legend class="text-center bg-gray">
+                  <span class="fieldset-legend">PAYMENT SCHEDULE</span>
+                </legend>
+                <div class="fieldset-wrapper">
+                  <table class="w-100 table table-striped">
+                    <thead>
+                      <tr>
+                        <th class="border-0">Date Due</th>
+                        <th class="amount border-0">Amount</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Today</td>
+                        <td class="amount">$839.60</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </fieldset>
+            </div>
+            <div class="col-md-6">
+              <div id="charges-wrapper">
+                <fieldset class="form-wrapper" id="edit-charges">
+                  <legend class="text-center bg-gray">
+                    <span class="fieldset-legend">Charges</span>
+                  </legend>
+                  <div class="fieldset-wrapper">
+                    <table class="w-100 table table-striped">
+                      <tbody>
+                        <tr class="line-item">
+                          <td>Lodging: Paradise Peak</td>
+                          <td class="amount">$464.00</td>
+                        </tr>
+                        <tr class="line-item">
+                          <td>Cleaning Fee</td>
+                          <td class="amount">$265.00</td>
+                        </tr>
+                        <tr class="line-item">
+                          <td>Reservation Fee</td>
+                          <td class="amount">$24.00</td>
+                        </tr>
+                        <tr class="line-item acceptable">
+                          <td>
+                            Pet Fee (optional)<br />
+                            <div class="form-type-checkbox mt-2">
+                              <input
+                                type="checkbox"
+                                id="edit-charges-3"
+                                name="charges[3]"
+                                value="1"
+                                class="form-check-input"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="edit-charges-3"
+                                >PURCHASE Pet Fee
+                              </label>
+                            </div>
+                          </td>
+                          <td class="amount"><del>$70.00</del></td>
+                        </tr>
+                        <tr class="line-item forced-choice insurance-dp">
+                          <td>
+                            Damage Protection (optional)<br />
+                            <a
+                              class="text-dark"
+                              data-bs-toggle="collapse"
+                              href="#collapseDamage"
+                              role="button"
+                              aria-expanded="false"
+                              aria-controls="collapseDamage"
+                              >More Details</a
+                            ><br />
+                            <p class="collapse" id="collapseDamage">
+                              <span
+                                >As a part of your stay, you may purchase a
+                                Vacation Rental Damage Protection plan designed
+                                to cover unintentional damages to the rental
+                                unit interior that occur during your stay
+                                provided they are disclosed to management prior
+                                to check-out. If purchased, the policy will pay
+                                a maximum benefit of $1500.00.</span
+                              >
+                            </p>
+                            <br /><br />
+                            <div
+                              class="form-item form-type-radios form-item-charges-5"
+                            >
+                              <label for="edit-charges-5 fw-bold"
+                                >PURCHASE Damage Protection
+                                <span
+                                  class="form-required"
+                                  title="This field is required."
+                                  >*</span
+                                ></label
+                              >
+                              <div id="edit-charges-5" class="form-radios">
+                                <div
+                                  class="form-item form-type-radio form-item-charges-5 mt-2"
+                                >
+                                  <input
+                                    type="radio"
+                                    id="edit-charges-5-1"
+                                    name="charges[5]"
+                                    value="-1"
+                                    class="form-check-input"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="edit-charges-5-1"
+                                    >I DECLINE this charge
+                                  </label>
+                                </div>
+                                <div
+                                  class="form-item form-type-radio form-item-charges-5 mt-2"
+                                >
+                                  <input
+                                    type="radio"
+                                    id="edit-charges-5-1--2"
+                                    name="charges[5]"
+                                    value="1"
+                                    class="form-check-input"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="edit-charges-5-1--2"
+                                    >I ACCEPT this charge
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                          <td class="amount">$39.00</td>
+                        </tr>
+                        <tr class="line-item border-top border-dark">
+                          <td>
+                            Travel Insurance (optional)<br />
+                            <a
+                              class="text-dark"
+                              data-bs-toggle="collapse"
+                              href="#collapseTravel"
+                              role="button"
+                              aria-expanded="false"
+                              aria-controls="collapseTravel"
+                              >More Details</a
+                            ><br />
+                            <p class="collapse" id="collapseTravel">
+                              OPTIONAL TRAVEL INSURANCE: VACATION RENTAL
+                              INSURANCE - RedSky Vacation Rental Insurance has
+                              been offered with your reservation. Vacation
+                              Rental Insurance reimburses for pre-paid,
+                              non-refundable expenses due to certain
+                              unforeseeable circumstances that may jeopardize
+                              your vacation and force you to incur unplanned
+                              expenses. We strongly recommend you purchase this
+                              valuable protection. View a Description of
+                              Coverage/Policy
+                              <a href="#" target="_blank">here</a>.
+                            </p>
+                            <br /><br />
+                            <div
+                              class="form-item form-type-radios form-item-charges-7"
+                            >
+                              <label for="edit-charges-7"
+                                >PURCHASE Travel Insurance
+                                <span
+                                  class="form-required"
+                                  title="This field is required."
+                                  >*</span
+                                ></label
+                              >
+                              <div id="edit-charges-7" class="form-radios">
+                                <div
+                                  class="form-item form-type-radio form-item-charges-7"
+                                >
+                                  <input
+                                    type="radio"
+                                    id="edit-charges-7-1"
+                                    name="charges[7]"
+                                    value="-1"
+                                    class="form-check-input"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="edit-charges-7-1"
+                                    >I DECLINE this charge
+                                  </label>
+                                </div>
+                                <div
+                                  class="form-item form-type-radio form-item-charges-7"
+                                >
+                                  <input
+                                    type="radio"
+                                    id="edit-charges-7-1--2"
+                                    name="charges[7]"
+                                    value="1"
+                                    class="form-check-input"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="edit-charges-7-1--2"
+                                    >I ACCEPT this charge
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                          <td class="amount"><del>$58.35</del></td>
+                        </tr>
+                        <tr class="sub-total">
+                          <th>Sub-Total</th>
+                          <td class="amount"><b>$753.00</b></td>
+                        </tr>
+                        <tr class="tax border-top border-dark">
+                          <th>Tax</th>
+                          <td class="amount"><b>$86.60</b></td>
+                        </tr>
+                        <tr class="total">
+                          <th>Total</th>
+                          <td class="amount"><b>$839.60</b></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <fieldset class="form-wrapper mt-md-3" id="edit-charges">
+                <legend class="text-center bg-gray">
+                  <span class="fieldset-legend">GUEST ADDRESS</span>
+                </legend>
+                <div class="fieldset-wrapper p-3">
+                  <div class="row g-2">
+                    <div class="col-6">
+                      <div class="mb-3">
+                        <label for="fname" class="form-label"
+                          >First Name *</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control rounded-0 text-secondary"
+                          id="fname"
+                          name="fname"
+                          aria-describedby="firstname"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="mb-3">
+                        <label for="lname" class="form-label"
+                          >Last Name *</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control rounded-0 text-secondary"
+                          id="fname"
+                          name="fname"
+                          aria-describedby="lastname"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input
+                      type="email"
+                      class="form-control rounded-0 text-secondary"
+                      id="email"
+                      name="email"
+                      aria-describedby="email"
+                    />
+                  </div>
+                  <div class="row g-2">
+                    <div class="col-6">
+                      <div class="mb-3">
+                        <label for="promary-no" class="form-label"
+                          >Primary Phone *</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control rounded-0 text-secondary"
+                          id="promary-no"
+                          name="promary-no"
+                          aria-describedby="primaryNumber"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="mb-3">
+                        <label for="secondary-no" class="form-label"
+                          >Secondary Phone *</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control rounded-0 text-secondary"
+                          id="secondary-no"
+                          name="secondary-no"
+                          aria-describedby="secondaryNumber"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="address-1" class="form-label"
+                      >Address Line 1 *</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control rounded-0 text-secondary"
+                      id="address-1"
+                      name="address-1"
+                      aria-describedby="address1"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="address-2" class="form-label"
+                      >Address Line 2 *</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control rounded-0 text-secondary"
+                      id="address-2"
+                      name="address-2"
+                      aria-describedby="address2"
+                    />
+                  </div>
+                  <div class="row g-2">
+                    <div class="col-4">
+                      <div class="mb-3">
+                        <label for="city" class="form-label">City *</label>
+                        <input
+                          type="text"
+                          class="form-control rounded-0 text-secondary"
+                          id="city"
+                          name="city"
+                          aria-describedby="city"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="mb-3">
+                        <label for="state" class="form-label">
+                          State/Province *</label
+                        >
+                        <select class="form-select rounded-0 text-secondary">
+                          <option selected>--Select--</option>
+                          <option value="alabama">Alabama</option>
+                          <option value="alaska">Alaska</option>
+                          <option value="arizona">Arizona</option>
+                          <option value="colorado">Colorado</option>
+                          <option value="delaware">Delaware</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="mb-3">
+                        <label for="zip-code" class="form-label"
+                          >ZIP/Postal Code *</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control rounded-0 text-secondary"
+                          id="zip-code"
+                          name="zip-code"
+                          aria-describedby="zipCode"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="country" class="form-label"> Country *</label>
+                    <select class="form-select rounded-0 text-secondary">
+                      <option selected>United States</option>
+                      <option value="afghanistan">Afghanistan</option>
+                      <option value="aland-island">Aland Island</option>
+                      <option value="tajikistan">Tajikistan</option>
+                      <option value="united-kingdom">United Kingdom</option>
+                      <option value="united-state">United State</option>
+                    </select>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset class="form-wrapper mt-md-3" id="edit-charges">
+                <legend class="text-center bg-gray">
+                  <span class="fieldset-legend">SELECT PAYMENT METHOD</span>
+                </legend>
+                <div class="fieldset-wrapper p-3">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault1"
+                    />
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Default radio
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault2"
+                      checked
+                    />
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Default checked radio
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="col-md-12">
+              <fieldset class="form-wrapper mt-md-3" id="edit-charges">
+                <legend class="text-center bg-gray">
+                  <span class="fieldset-legend"
+                    >HOW DID YOU HEAR ABOUT US?</span
+                  >
+                </legend>
+                <div class="fieldset-wrapper p-3">
+                  <div class="form-floating">
+                    <div class="fieldset-description mb-2">
+                      This is a required field *
+                    </div>
+                    <textarea
+                      class="form-control rounded-0"
+                      id="floatingTextarea2"
+                      style="height: 60px"
+                    ></textarea>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset class="form-wrapper mt-md-3" id="edit-charges">
+                <legend class="text-center bg-gray">
+                  <span class="fieldset-legend"
+                    >COMMENTS & SPECIAL REQUESTS</span
+                  >
+                </legend>
+                <div class="fieldset-wrapper p-3">
+                  <div class="form-floating">
+                    <div class="fieldset-description mb-2">
+                      Enter any comments or special requests here.
+                    </div>
+                    <textarea
+                      class="form-control rounded-0"
+                      id="floatingTextarea2"
+                      style="height: 60px"
+                    ></textarea>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset class="form-wrapper mt-md-3" id="edit-charges">
+                <legend class="text-center bg-gray">
+                  <span class="fieldset-legend">TERMS & CONDITIONS</span>
+                </legend>
+                <div class="fieldset-wrapper p-3">
+                  <div
+                    class="border rounded p-2 mb-2 bg-white"
+                    style="overflow: auto; height: 300px"
+                  >
+                    <h3>VACATION RENTAL AGREEMENT FOR PARADISE PEAK</h3>
+                    <div class="p-3 py-5 bg-light">
+                      <div class="bg-white py-4 px-3 text-center mb-3">
+                        <img
+                          height="100"
+                          src="https://web.streamlinevrs.com/pmt_common/d_images/company_logo_2209.jpg"
+                        />
+                      </div>
+                      <div class="py-4"></div>
+                      <div class="p-2 bg-white">
+                        <p class="m-0">Terms & Conditions</p>
+                      </div>
+                      <div class="py-4 px-3">
+                        <p>Big Bear Cool Cabins</p>
+                      </div>
+                      <div class="bg-white py-4 px-3">
+                        <dl>
+                          <dt class="mb-2">
+                            Thank you for choosing Cool Cabins!
+                          </dt>
+                          <dd>
+                            At booking, the credit card is charged 25% of the
+                            reservation total, and the balance is charged 14
+                            days prior to check in. Please call if you want the
+                            balance charged earlier or if you want to make a
+                            payment. If your arrival date is less than 14 days
+                            away, the credit card will be charged the full
+                            reservation amount.
+                          </dd>
+                          <dd>
+                            Please note, the cardholder must be present at
+                            check-in and have valid ID and the credit card used.
+                            If special arrangements need to be made, please
+                            contact our office.
+                          </dd>
+                          <dd>
+                            Reservations are non-refundable except when canceled
+                            at least 30 days before the stay in which case there
+                            is a cancellation fee of $75 or 10%, whichever is
+                            greater. If the cancellation is within 30 days from
+                            your arrival date and property is re-booked, a rain
+                            check will be issued valid for 6 months. Some
+                            properties do have minimum stay requirements in
+                            which case you will be contacted to add nights or
+                            the reservation may be canceled. All credit card
+                            payments will be subject to a 2.5% credit card
+                            processing fee.{" "}
+                          </dd>
+                          <dd>
+                            After completing your reservation, you will receive
+                            a rental contract to complete and return back to Big
+                            Bear Cool Cabins within 24 – 48 hours. We will then
+                            email your confirmation and directions.
+                          </dd>
+                          <dt>We look forward to your stay with us!</dt>
+                          <!-- {/* <dt class="text-center">Big Bear Cool Cabins | Your Vacation Specialists</dt> */} -->
+                        </dl>
+                        <div class="text-center">
+                          <h6>
+                            Big Bear Cool Cabins |&nbsp;Your Vacation
+                            Specialists
+                          </h6>
+                          <p>
+                            40375 Big Bear Blvd | PO Box 1655 | Big Bear Lake,
+                            CA 92315
+                          </p>
+                          <p>
+                            O: 909-878-COOL (2665) | T: 909-219-9681 | F:
+                            909-866-9808
+                          </p>
+                          <p>
+                            <strong>
+                              <a
+                                href="mailto:Reservations@BigBearCoolCabins.com"
+                              >
+                                <span>Reservations@BigBearCoolCabins.com</span>
+                              </a>
+                              <span> | </span>
+                              <a href="http://BigBearCoolCabins.com">
+                                <span>BigBearCoolCabins.com</span>
+                              </a>
+                            </strong>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="terms-conditions"
+                    />
+                    <label class="form-check-label" for="terms-conditions">
+                      I have read and accept the above terms & conditions. *
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              <div class="col-12 text-center mt-3">
+                <button type="submit" class="btn bg-btn rounded-0 mx-auto">
+                  PROCEED TO SECURE PAYMENT
+                </button>
+
+                <div class="accepted-payments">
+                  <strong class="d-block">We Accept</strong>
+                  <div class="card-icon visa"></div>
+                  <div class="card-icon mastercard"></div>
+                  <div class="card-icon amex"></div>
+                  <div class="card-icon discover"></div>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </form>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
